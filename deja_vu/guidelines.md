@@ -1,35 +1,26 @@
-# CheatSheet Guidelines
+# Writing Cheatsheet
 
-## Headers
+## Syntax
+- Basic syntax = **Markdown**
+- **AsciiMath** Supported
+> Not following rules = **Uncharted waters**
 
-### Rules
-- Headers should follow their hierarchy `h1` > `h2` > `h3`.
-- Header Hierarchy is followed upto `h3`
-- Content should only come after `h3`
+## Rules
+- Headers should follow their hierarchy `#` > `##` > `###`.
+- Header Hierarchy is followed up to `###`
+- Contents should only come after `##` & `###`
 
-### Style
-| Tag  | Heirarchy | Example               |
-| ---- | --------- | --------------------- |
-| `h1` | Sections  | CheatSheet Guidelines |
-| `h2` | Cards     | Headers               |
-| `h3` | Titles    | Rules, Styles         |
+## Hierarchy
+| Tag   | Hierarchy | Example            |
+| ----- | --------- | ------------------ |
+| `#`   | Sections  | Writing Cheatsheet |
+| `##`  | Cards     | Hierarchy          |
+| `###` | Titles    | Rules, Styles      |
 
 
-## Table
+# Examples
 
-### Rules
-- Standard Markdown table rules
-- todo
-
-### Style
-- todo
-
-## Typhography Elements
-
-### Rules
-- Todo, I dont know how i came this for, lol.
-
-### Examples
+## Typography
 | Element | Example                          |
 | ------- | -------------------------------- |
 | Bold    | **bold text**                    |
@@ -39,14 +30,8 @@
 
 ## Other Elements
 
-### Rules
-- Todo,
-
 ### Blockquote 
 > blockquote                                                                         |
-
-### Image
-![Some plane](https://upload.wikimedia.org/wikipedia/commons/b/bd/Hello_world_c.svg)
 
 ### Ordered List 	
 1. First item
@@ -57,6 +42,10 @@
 - First item
 - Second item
 - Third item
+
+### Image
+![Some plane](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/320px-HelloWorld.svg.png)
+> TODO: Handle Images Properly
 
 
 ## Extended Elements
@@ -85,3 +74,9 @@
 - Horizontal Rule 	
 - Footnote
 - Definition List
+
+## Custom Elements
+
+### AsciiMath
+- Supported via Mathjax
+> $sum_(i=1)^n i^3=((n(n+1))/2)_2^2$
