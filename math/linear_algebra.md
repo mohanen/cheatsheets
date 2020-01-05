@@ -140,3 +140,35 @@ $(vec a + vec b) ** vec c = vec a ** vec c + vec b ** vec c$
 ### Associative
 
 $(c * vec a) ** vec b = c * (vec a ** vec b)$
+
+## Planes in $RR^3$
+
+### Equation
+
+$Ax + by + cz = D$
+
+### Normal Vector
+
+$vec n = [[A], [B], [C]]$ is a vector ⟂ to the plane
+
+### Normal Vector and Point on Plane
+
+- Let $vec n$, two points on plane $P_0 = (x_0, y_0, z_0)$, $P = (x, y, z)$
+- $vec v = P - P_0$ will be a vector on the plane
+- $:. vec n . vec v = 0 because vec n$ is ⟂ to $vec v$
+- $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$
+- $Ax+By+Cz = Ax_0 + By_0 + Cz_0 = D$
+
+### Distance from a point to plane
+
+- Any Point on Plane $P_0$, Distance to be determined Point $P_1 = (x_1, y_1, z_1)$ and Point $P_2$ is ⟂ly projected $P_1$ on plane
+- Let $vec a = P_2 - P_1$ & $vec f = P_0 - P_1$
+- point to plane Distance = Distance between $P_1$ & $P_2$ = $||vec a||$
+- $||vec a|| = ||vec f|| * cos theta = (||vec n|| * ||vec f|| cos theta) / ||vec n|| = (vec n * vec f) / ||vec n||$
+- $||vec a|| = (A(x_0 - x_1) + B(y_0 - y_1) + C(z_0 - z_1))/(sqrt(A^2 + B^2 + C^2))$
+
+### Distance between two planes
+
+- Shortest distance = **Perpendicular distance**
+- If two Planes **Not parallel** then **distance = 0** since they will intersect at some point
+- Distance between || planes = **Normalized difference of the $D$**
