@@ -66,17 +66,14 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 ## Dot product
 
-$vec a = [[a_1], [a_2], [..], [a_n]], vec b [[b_1], [b_2], [..], [b_n]],.. in RR^n$
-
 - Sum of the products of the corresponding entries
-
-$vec a * vec b = a_1 * b_1 + a_2 * b_2 + .. + a_n * b_n$
-
-- Multiplied length of $vec a$ projected on $vec b$ and $vec b$
-- (projected $||vec a||$) x ($||vec b||$)
+- $[[a_1], [..], [a_n]] * [[b_1], [..], [b_n]] = a_1 * b_1 + .. + a_n * b_n$
+- Product of $||vec a||$ projected on $vec b$ and $||vec b||$
 - $vec a * vec b = ||vec a|| cos theta * ||vec b||$
 
 ![Projected image](https://github.com/mohanen/cheatsheets/raw/master/math/linear_algebra/dot_product.png)
+
+## Dot product Properties
 
 ### Commutative
 
@@ -126,8 +123,9 @@ $||vec a + vec b|| <= ||vec a|| + ||vec b||$
 ### Cofactor expansion
 
 $vec a ** vec b = [[hat i, hat j, hat k], [a_1, a_2, a_3], [b_1, b_2, b_3]]$
-
 $ = |[a_2 , a_3], [b_2, b_3]|hat i - |[a_1 , a_3], [b_1, b_3]|hat j + |[a_1 , a_2], [b_1, b_2]|hat k $
+
+## Cross product Properties
 
 ### Anti-commutative
 
