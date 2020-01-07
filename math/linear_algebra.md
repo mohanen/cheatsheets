@@ -180,9 +180,9 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 - solves linear equations by reducing them to row echelon form
 - operation allowed
 - multiply row by constant $-2r_1 -> r_1$
-- switch rows $r_1<->r_2$
-- add rows $r_1 + r_2 ->r_2$
-- combination of above $-2r_1 + 3r_2->r_2$
+- switch rows $r_ 1 harr r_2$
+- add rows $r_1 + r_2 -> r_2$
+- combination of above $-2r_1 + 3r_2 -> r_2$
 
 ### Row echelon form
 
@@ -195,9 +195,10 @@ $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$
 - Linearly independent $=> A ** vec x = vec 0 <=> vec x = vec 0 :. N(A) = vec 0$
 - Can be Solved with **Gaussian elimination**
 - $[[1, 0, 0], [0, 1, 0], [0, 0, 1]] [[x_1], [x_2], [x_3]] = [[0], [0], [0]]$
+- **Nullity** = No. of **non pivot** columns in row echelon form
 
-### column space of a matrix
+### Column space of a matrix
 
 - $C(A) = Span(vec v_1, vec v_2,.. vec v_n) $
 - Valid subspace - has $vec o$ & closed under addition & multiplication
-- Linearly independent = **basis of column space**
+- Linearly independent vectors = **Basis** of Column space = No. of pivot entries in row echelon form = **Rank** of a matrix
