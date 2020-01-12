@@ -84,6 +84,8 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 Eg: $hat i = [[1], [0]], hat j = [[0], [1]]$
 
+- Represented in Identity Matrix $[[1, 0], [0, 1]]$
+
 ### Denoting vectors in terms of unit vectors
 
 - Any vector can be denoted in terms of **linear combinations of the unit vectors**
@@ -96,6 +98,26 @@ Eg: $hat i = [[1], [0]], hat j = [[0], [1]]$
 > **Relative way** to denote a vector, and it holds true no matter what **linear transformation** is applied.
 
 ## Linear Transformations
+
+- A function thats take in a vector and returns a transformed vector
+- Can be represented using the position of unit vectors
+
+### Rules
+
+- All lines must remain lines
+- Origin should be fixed
+
+### Example
+
+- Lets assume an operation - Rotations on clockwise
+- Before rotation $vec v = 1 hat i + 2 hat j = [[1], [2]]$ from above
+- After rotation $hat i = [[0], [-1]]$ and $hat j = [[1], [0]]$
+- $vec v = 1[[0], [-1]] + 2[[1], [0]] = [[0+2], [-1+0]] = [[2], [-1]]$
+- This can be represented in a single matrix $[[0, 1], [-1, 0]]$
+
+### **Intuition**
+
+> Applying transformation in images such as rotation, flip, resize
 
 ## Dot product
 
@@ -223,6 +245,35 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 ### **Intuition**
 
 > Useful way to represent, manipulate and study linear maps between finite dimensional vector spaces
+
+## Matrix Multiplication
+
+- Applying a transformation to a vector
+- Clockwise Rotation Matrix = $[[0, -1], [1, 0]]$ and $vec v = [[1], [2]]$
+
+$[[0, -1], [1, 0]] * [[1], [2]] = 1[[0], [1]] + 2[[-1], [0]] = [[0], [1]] + [[-2], [0]] = [[2], [1]]$
+
+- Lets try Two operations Clockwise Rotation and shear
+- Rotation $[[0, -1], [1, 0]]$ and shear $[[1, 0], [1, 1]]$
+- Rotation(shear($vec v$)) = Rotation_Shear($vec v$)
+
+$[[0, -1], [1, 0]] [[1, 0], [1, 1]] [[1], [2]] = [[-1, -1],[1, 0]][[1], [2]]$
+$[[0, -1], [1, 0]] [[1], [1]] = 1[[0], [1]] + 1[[-1], [0]] = [[-1], [1]]$
+$[[0, -1], [1, 0]] [[0], [1]] = 1[[0], [1]] + 1[[-1], [0]] = [[-1], [0]]$
+
+- Order matters but it is Associative
+
+### **Intuition**
+
+> we been told the shortcut about row x column but it is actually how $hat i and hat j$ get changes when transformed
+
+## Determinant of Matrix
+
+- Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
+- Flipping = -ve determinant
+- Determinant $!= 0 <=> $ Columns of the matrix are linearly independent
+- $det ([[a, c], [b, d]]) = ad - cb$
+- For $hat i & hat j$ $det ([[1, 0], [0, 1]]) = 1 * 1 - 0 * 0 = 1$
 
 ## Solving with Matrices
 
