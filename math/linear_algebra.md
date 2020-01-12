@@ -251,7 +251,7 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 - Applying a transformation to a vector
 - Clockwise Rotation Matrix = $[[0, -1], [1, 0]]$ and $vec v = [[1], [2]]$
 
-$[[0, -1], [1, 0]] * [[1], [2]] = 1[[0], [1]] + 2[[-1], [0]] = [[0], [1]] + [[-2], [0]] = [[2], [1]]$
+$[[0, -1], [1, 0]] * [[1], [2]] = 1[[0], [1]] + 2[[-1], [0]] = [[-2], [1]]$
 
 - Lets try Two operations Clockwise Rotation and shear
 - Rotation $[[0, -1], [1, 0]]$ and shear $[[1, 0], [1, 1]]$
