@@ -17,12 +17,11 @@ $vec V= [[0], [1]]$
 
 Eg: $vec V in RR^2$
 
-### Unit vector
+### **Intuition**
 
-- Vector with magnitude 1
-- $hat$ denotes unit vector
+> Say you want to move something in a specific direction a single value cannot represent that and you may need a vector.
 
-Eg: $hat i = [[0], [1]], hat j = [[1], [0]]$
+> Applying a transformation to an Image like rotation, shear, resize, flip..
 
 ## Add & Scale Vectors
 
@@ -37,6 +36,10 @@ $2 * [[3], [1]] = [[2 * 3], [2 * 1]] = [[6], [2]]$
 ### Parametric representations of lines
 
 $vec y = s * vec x + vec t$
+
+### **Intuition**
+
+> Lets assume we wanna rotate an image clockwise 2 times, you can actually calculates where it ends when rotated 2 times and do it in a single operation
 
 ## Linear combinations & span
 
@@ -56,13 +59,43 @@ $Span(vec v_1, vec v_2) = R^2 <=> vec v_1 != c * vec v_2$
 
 $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
+### **Intuition**
+
+> This allows us to relatively specify one vector as a linear combination of other, so when the other vector changes, the definition will still hold true. So we don't have track or update everything when a vector changed due to some transformation.
+
 ## Linear independence
 
 - Set of vectors that are not linear combinations of other in the set
 - set of vectors with each vector adding new dimentionality to its span
+- Such vectors are called **Basis of a Subspace**
 - S is linearly independent if
   $S = {vec v_1, vec v_2,... vec v_n}$
   $c_1 * vec v_1 + c_2 * vec v_2 + c_n * vec v_n  = 0 <=> c_(0->n) = 0$
+
+### **Intuition**
+
+> Its like the prime number for vectors. In a set, all vectors should be unique and cannot be created from linear combinations of each other.
+
+## Unit Vectors
+
+- Vector with magnitude 1
+- $hat$ denotes unit vector
+- Unit vectors are **Basis of the Subspace** it is in.
+
+Eg: $hat i = [[1], [0]], hat j = [[0], [1]]$
+
+### Denoting vectors in terms of unit vectors
+
+- Any vector can be denoted in terms of **linear combinations of the unit vectors**
+- $vec v = [[1], [2]]$
+- $:. vec v = 1 hat i + 2 hat j$
+- $= 1 [[1], [0]] + 2 [[0], [1]] = [[1], [0]] + [[0], [2]] = [[1], [2]]$
+
+### **Intuition**
+
+> **Relative way** to denote a vector, and it holds true no matter what **linear transformation** is applied.
+
+## Linear Transformations
 
 ## Dot product
 
@@ -72,6 +105,10 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 - $vec a * vec b = ||vec a|| cos theta * ||vec b||$
 
 ![Projected image](https://github.com/mohanen/cheatsheets/raw/master/math/linear_algebra/dot_product.png)
+
+### **Intuition**
+
+> Allows us to find the angle between the vectors, like if dot product is zero that means they are perpendicular
 
 ## Dot product Properties
 
@@ -105,6 +142,10 @@ $|vec a * vec b| <= ||vec a|| * ||vec b||$
 
 $|vec a * vec b| = ||vec a|| * ||vec b|| <=> vec a = c * vec b$
 
+### **Intuition**
+
+> Its just Exploiting the beauty of dot product nothing more
+
 ## Triangle inequality
 
 $||vec a + vec b|| <= ||vec a|| + ||vec b||$
@@ -119,6 +160,10 @@ $||vec a + vec b|| <= ||vec a|| + ||vec b||$
 - $vec a ** vec b = 0 if vec a = c * vec b$
 
 ![Cross Product](https://github.com/mohanen/cheatsheets/raw/master/math/linear_algebra/cross_product.png)
+
+### **Intuition**
+
+> It allows us to find the perpendicular vector and its length will give the area enclosed by the vector which denotes the angle between the vector implicitly
 
 ### Cofactor expansion
 
@@ -175,6 +220,12 @@ $vec n = [[A], [B], [C]]$ is a vector perpendicular to the plane
 
 Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 
+### **Intuition**
+
+> Useful way to represent, manipulate and study linear maps between finite dimensional vector spaces
+
+## Solving with Matrices
+
 ### Gaussian elimination
 
 - solves linear equations by reducing them to row echelon form
@@ -187,6 +238,8 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 ### Row echelon form
 
 $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$
+
+## Matrix Subspaces
 
 ### Null space of a matrix
 
@@ -202,3 +255,7 @@ $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$
 - $C(A) = Span(vec v_1, vec v_2,.. vec v_n) $
 - Valid subspace - has $vec o$ & closed under addition & multiplication
 - Linearly independent vectors = **Basis** of Column space = No. of pivot entries in row echelon form = **Rank** of a matrix
+
+### **Intuition**
+
+> Its just the span of the vectors in the matrices
