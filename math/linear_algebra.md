@@ -238,6 +238,8 @@ $vec n = [[A], [B], [C]]$ is a vector perpendicular to the plane
 - If two Planes **Not parallel** then **distance = 0** since they will intersect at some point
 - Distance between || planes = **Normalized difference of the $D$**
 
+# Matrix transformations
+
 ## Matrices with vectors
 
 Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
@@ -245,6 +247,26 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 ### **Intuition**
 
 > Useful way to represent, manipulate and study linear maps between finite dimensional vector spaces
+
+## Function
+
+- $f(x)=y$ where x is **domain** and y is **co-domain**
+- A **Relation** between member of one set with another
+- $f: x |-> y$ **Mapping** from one set to another
+- A Function is not changing a value its just **associating** to another value
+
+## Vector Transformations
+
+- Function that maps a set of vectors to another set.
+- can also be denoted using T
+- $T(vec a) = vec b$ or $T:vec a |-> vec b$
+
+## Linear Transformations
+
+### Rules
+
+- $T(vec a + vec b)= T(vec a) + T(vec b)$
+- $T(c * vec a)=c * T(vec a)$
 
 ## Matrix Multiplication
 
