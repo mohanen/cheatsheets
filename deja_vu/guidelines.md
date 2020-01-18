@@ -90,6 +90,8 @@
 
 ### AsciiMath
 
-- Supported via Mathjax
+- Supported via katex
 
-  > $\sum_{i=1}^g i^3 = \left (\frac {n(n+1)}{2} \right)_2^2 $
+Inline  $\vec a + \ vec b = \vec c$
+
+$$\sum_{i=1}^g i^3 = \left (\frac {n(n+1)}{2} \right)_2^2 $$
