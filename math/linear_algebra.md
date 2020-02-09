@@ -63,6 +63,16 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 > This allows us to relatively specify one vector as a linear combination of other, so when the other vector changes, the definition will still hold true. So we don't have track or update everything when a vector changed due to some transformation.
 
+## Subspaces
+
+- Set of vectors
+
+### Rules
+
+1. Contains the 0 vector
+2. Closed under scalar multiplication
+3. Closed under vector addition.
+
 ## Linear independence
 
 - Set of vectors that are not linear combinations of other in the set
@@ -263,10 +273,43 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 
 ## Linear Transformations
 
+- $T(vec x) = bb A_(m**n) * vec x$
+- Any Linear transformation can be represented in a Matrix
+- If V is subspace, T(V) is also a subspace
+
 ### Rules
 
 - $T(vec a + vec b)= T(vec a) + T(vec b)$
 - $T(c * vec a)=c * T(vec a)$
+
+### Example
+
+- $bb A_(m ** n) = [[vec v_1, vec v_2, ..., vec v_n]]$ and $vec x = [[x_1], [x_2], [vdots], [x_n]] in RR^n $
+- $T(vec x) = bb A * vec x = x_1 * vec v_1 + x_2 * vec v_2 + ... +x_n * vec v_n  in RR^m $
+- $vec x$ = scaling factors of unit vectors.
+- $bb A$ = Resultant unit vectors after a Transformation
+- $bb A * vec x$ = linear combination of the vectors in matrix $bb A$ which are scaled based on the values in $vec x$
+
+## Identity Matrix
+
+- $bb A$ = Identity Matrix $<=> bb A = [[hat i, hat j, hat k, ...]]$
+- $:. T(vec x) = A_(m**n) * vec x = vec x$
+
+### **Intuition**
+
+- Mapping a set of vectors to itself.
+- **domain = co-domain**
+
+## im(T): Image of a transformation
+
+- $T(S) = $ image of subset S under T
+- $T(R^n) = {S | S in R^m}$
+- $:. T(vec x) = A_(m**n) * vec x =$ col space of A $= im(T)$
+- im(T) = image of T = subset of a co-domain
+
+### **Intuition**
+
+Its more like applying limits(domain) to the matrix A to create a subset(image) in co-domain.
 
 ## Matrix Multiplication
 
