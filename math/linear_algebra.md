@@ -13,7 +13,7 @@ $vec V= [[0], [1]]$
 
 ### Real coordinate space
 
-- $RR^n$ - nD real coordinate space.
+- $RR^n$ = nD real coordinate space.
 
 Eg: $vec V in RR^2$
 
@@ -76,8 +76,15 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 ## Linear independence
 
 - Set of vectors that are not linear combinations of other in the set
-- set of vectors with each vector adding new dimentionality to its span
+- Set of vectors with each vector adding new dimensionality to its span
 - Such vectors are called **Basis of a Subspace**
+
+### Rules
+
+- Members of set $!=$ any linear combination of the set
+
+### Examples
+
 - S is linearly independent if
   $S = {vec v_1, vec v_2,... vec v_n}$
   $c_1 * vec v_1 + c_2 * vec v_2 + c_n * vec v_n  = 0 <=> c_(0->n) = 0$
@@ -88,17 +95,22 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 ## Unit Vectors
 
-- Vector with magnitude 1
-- $hat$ denotes unit vector
+- $^$ denotes unit vector
 - Unit vectors are **Basis of the Subspace** it is in.
 
-Eg: $hat i = [[1], [0]], hat j = [[0], [1]]$
+### Rules
+
+- Magnitude = 1
+
+### Example
+
+$hat i = [[1], [0]], hat j = [[0], [1]]$
 
 - Represented in Identity Matrix $[[1, 0], [0, 1]]$
 
-### Denoting vectors in terms of unit vectors
+## Linear combinations of unit vectors
 
-- Any vector can be denoted in terms of **linear combinations of the unit vectors**
+- Any vector is a **linear combinations of the unit vectors**
 - $vec v = [[1], [2]]$
 - $:. vec v = 1 hat i + 2 hat j$
 - $= 1 [[1], [0]] + 2 [[0], [1]] = [[1], [0]] + [[0], [2]] = [[1], [2]]$
@@ -123,7 +135,7 @@ Eg: $hat i = [[1], [0]], hat j = [[0], [1]]$
 - Before rotation $vec v = 1 hat i + 2 hat j = [[1], [2]]$ from above
 - After rotation $hat i = [[0], [-1]]$ and $hat j = [[1], [0]]$
 - $vec v = 1[[0], [-1]] + 2[[1], [0]] = [[0+2], [-1+0]] = [[2], [-1]]$
-- This can be represented in a single matrix $[[0, 1], [-1, 0]]$
+- This Transformation can be represented in a single matrix $[[0, 1], [-1, 0]]$
 
 ### **Intuition**
 
@@ -228,13 +240,15 @@ $vec n = [[A], [B], [C]]$ is a vector perpendicular to the plane
 
 ### Normal Vector and Point on Plane
 
+Represent a Plane with a Normal vector and a Point on Plane
+
 - Let $vec n$, two points on plane $P_0 = (x_0, y_0, z_0)$, $P = (x, y, z)$
 - $vec v = P - P_0$ will be a vector on the plane
 - $:. vec n . vec v = 0 because vec n$ is perpendicular to $vec v$
 - $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$
 - $Ax+By+Cz = Ax_0 + By_0 + Cz_0 = D$
 
-### Distance from a point to plane
+## Distance from a point to plane
 
 - Any Point on Plane $P_0$, Distance to be determined Point $P_1 = (x_1, y_1, z_1)$ and Point $P_2$ is perpendicularly projected $P_1$ on plane
 - Let $vec a = P_2 - P_1$ & $vec f = P_0 - P_1$
@@ -242,7 +256,7 @@ $vec n = [[A], [B], [C]]$ is a vector perpendicular to the plane
 - $||vec a|| = ||vec f|| * cos theta = (||vec n|| * ||vec f|| cos theta) / ||vec n|| = (vec n * vec f) / ||vec n||$
 - $||vec a|| = (A(x_0 - x_1) + B(y_0 - y_1) + C(z_0 - z_1))/(sqrt(A^2 + B^2 + C^2))$
 
-### Distance between two planes
+## Distance between two planes
 
 - Shortest distance = **Perpendicular distance**
 - If two Planes **Not parallel** then **distance = 0** since they will intersect at some point
@@ -282,13 +296,20 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 - $T(vec a + vec b)= T(vec a) + T(vec b)$
 - $T(c * vec a)=c * T(vec a)$
 
+## Matrix vector products
+
+- Linear Transformations as Matrix Vector products
+
 ### Example
 
 - $bb A_(m ** n) = [[vec v_1, vec v_2, ..., vec v_n]]$ and $vec x = [[x_1], [x_2], [vdots], [x_n]] in RR^n $
-- $T(vec x) = bb A * vec x = x_1 * vec v_1 + x_2 * vec v_2 + ... +x_n * vec v_n  in RR^m $
-- $vec x$ = scaling factors of unit vectors.
-- $bb A$ = Resultant unit vectors after a Transformation
-- $bb A * vec x$ = linear combination of the vectors in matrix $bb A$ which are scaled based on the values in $vec x$
+- $T(vec x) = {bb A * vec x | x in RR^n } in RR^m$
+- $bb A * vec x = x_1 * vec v_1 + x_2 * vec v_2 + ... +x_n * vec v_n$
+
+### **Intuition**
+
+- $bb A$ = resultant **unit vectors after Transformation**
+- $vec x$ = linear combination of unit vector
 
 ## Identity Matrix
 
@@ -305,7 +326,7 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 - $T(S) = $ image of subset S under T
 - $T(R^n) = {S | S in R^m}$
 - $:. T(vec x) = A_(m**n) * vec x =$ col space of A $= im(T)$
-- im(T) = image of T = subset of a co-domain
+- im(T) = image of T = co-domain (subset) $in RR^m$
 
 ### **Intuition**
 
