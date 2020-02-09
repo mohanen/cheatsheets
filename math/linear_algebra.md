@@ -332,6 +332,32 @@ Matrix $A_(m ** n) => vec v_(1..n) in RR^m$
 
 Its more like applying limits(domain) to the matrix A to create a subset(image) in co-domain.
 
+## Preimage of a set
+
+- domain = $A sube X$ & co-domain = $S sube Y$
+- $T(A) = B sube Y$ = image of subset A under T
+- $S sube Y$ that maps to A = ${vec v in Y | T(A) in S}$
+- ${vec v in Y | T(A) in S} = T^-1(S) sube A$
+- $T^-1(S)$ = Preimage of S under T
+- $T(T^-1(S)) sube S$ is because there can exist some elements of S that do not have a matching element in the Preimage A.
+
+## Kernel of Transformation
+
+- $ker(T) = {vec x | T(vec x) = vec 0}$
+- Null space of A = N(A) = ${vec x | bb A * vec x = vec 0}$
+- $ker(T) = N(A)$
+
+## Scaling of Transformations
+
+- $c* (T(vec x)) = (c*T)(vec x) = c * bb A * vec x$
+
+## Sum of Transformations
+
+- $T:RR^n->RR^m$ and $S:RR^n->RR^m$
+- $T(vec x) + S(vec x) = (T+S)(vec x)$
+- $bb A * vec x + bb B * vec x = (bb(A+B)) * vec x$
+- Sum of Transformations = Sum of Matrices
+
 ## Matrix Multiplication
 
 - Applying a transformation to a vector
