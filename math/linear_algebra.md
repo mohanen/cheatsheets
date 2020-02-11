@@ -358,18 +358,18 @@ Its more like applying limits(domain) to the matrix A to create a subset(image) 
 - $bb A * vec x + bb B * vec x = (bb(A+B)) * vec x$
 - Sum of Transformations = Sum of Matrices
 
-## 2D Rotation with θ
+## 2D Rotation
 
-- Rotate Counter Clockwise by θ in 2D
-- $T(hat i) = [[cos θ * ||hat i||],[sin θ * ||hat i||]] = [[cos θ],[sin θ]]$
-- $T(hat j) = [[-sin θ * ||hat i||],[cos θ * ||hat i||]] = [[-sin θ],[cos θ]]$
-- Transformation Matrix $[[cos θ, -sin θ],[sin θ, cost θ]]$
+- Rotate Counter Clockwise by $theta$ in 2D
+- $T(hat i) = [[cos theta * ||hat i||],[sin theta * ||hat i||]] = [[cos theta],[sin theta]]$
+- $T(hat j) = [[-sin theta * ||hat i||],[cos theta * ||hat i||]] = [[-sin theta],[cos theta]]$
+- Transformation Matrix $[[cos theta, -sin theta],[sin theta, cost theta]]$
 
-## 3D Rotation with θ
+## 3D Rotation
 
-- Rotate Counter Clockwise by θ in 3D along x-axis
-- x-coordinate of all vector = no change, $hat i$ = no change but $hat j & hat k$ = rotated with θ
-- Transformation Matrix $[[1, 0, 0], [0, cos θ, -sin θ],[0, sin θ, cost θ]]$
+- Rotate Counter Clockwise by $theta$ in 3D along x-axis
+- x-coordinate of all vector = no change, $hat i$ = no change but $hat j & hat k$ = rotated with $theta$
+- Transformation Matrix $[[1, 0, 0], [0, cos theta, -sin theta],[0, sin theta, cost theta]]$
 
 ## Matrix Multiplication
 
