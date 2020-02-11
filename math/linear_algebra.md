@@ -358,6 +358,19 @@ Its more like applying limits(domain) to the matrix A to create a subset(image) 
 - $bb A * vec x + bb B * vec x = (bb(A+B)) * vec x$
 - Sum of Transformations = Sum of Matrices
 
+## 2D Rotation with θ
+
+- Rotate Counter Clockwise by θ in 2D
+- $T(hat i) = [[cos θ * ||hat i||],[sin θ * ||hat i||]] = [[cos θ],[sin θ]]$
+- $T(hat j) = [[-sin θ * ||hat i||],[cos θ * ||hat i||]] = [[-sin θ],[cos θ]]$
+- Transformation Matrix $[[cos θ, -sin θ],[sin θ, cost θ]]$
+
+## 3D Rotation with θ
+
+- Rotate Counter Clockwise by θ in 3D along x-axis
+- x-coordinate of all vector = no change, $hat i$ = no change but $hat j & hat k$ = rotated with θ
+- Transformation Matrix $[[1, 0, 0], [0, cos θ, -sin θ],[0, sin θ, cost θ]]$
+
 ## Matrix Multiplication
 
 - Applying a transformation to a vector
