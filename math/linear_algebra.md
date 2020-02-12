@@ -95,8 +95,9 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 ## Unit Vectors
 
-- $^$ denotes unit vector
-- Unit vectors are **Basis of the Subspace** it is in.
+- ^ denotes unit vector
+- Often chose to form **Basis of the Subspace**, like ($hat i, hat j, hat k ...$).
+- $hat v = vec v/ ||vec v||$
 
 ### Rules
 
