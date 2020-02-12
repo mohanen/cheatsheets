@@ -97,7 +97,7 @@ $vec v_1 = c * vec v_2 => Span(vec v_1, vec v_2) = R^1$
 
 - ^ denotes unit vector
 - Often chose to form **Basis of the Subspace**, like ($hat i, hat j, hat k ...$).
-- $hat v = vec v/ ||vec v||$
+- Normalization = $hat v = vec v/ ||vec v||$
 
 ### Rules
 
@@ -228,6 +228,17 @@ $(vec a + vec b) ** vec c = vec a ** vec c + vec b ** vec c$
 ### Associative
 
 $(c * vec a) ** vec b = c * (vec a ** vec b)$
+
+## Projections
+
+- Projection of $vec x$ on $L = {c * vec v | c in RR}$
+- $Proj_L(x)$ = some vector in $L$ where $vec x - Proj_L(x)$ is orthogonal to $L$
+- WKT $Proj_L(x) = c * vec v$
+- $(vec x - Proj_L(x)) * vec v = 0 because$ orthogonal
+- $(vec x - c * vec v) * vec v => vec x * vec v - c * vec v * vec v = 0$
+- $c = (vec x * vec v)  / (vec v * vec v) = (vec x * vec v)  / ||vec v||$
+- $Proj_L(x) = c * vec v = ((vec x * vec v)  / ||vec v||) vec v$
+- Normalized vector $Proj_L(x) = (vec x * hat v) hat v $
 
 ## Planes in $RR^3$
 
