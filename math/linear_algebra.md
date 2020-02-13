@@ -412,6 +412,20 @@ $[[0, -1], [1, 0]] [[0], [1]] = 1[[0], [1]] + 1[[-1], [0]] = [[-1], [0]]$
 
 > we been told the shortcut about row x column but it is actually how $hat i and hat j$ get changes when transformed
 
+## Matrix Multiplication Properties
+
+### Anti-commutative
+
+$A * B != B * A$
+
+### Distributive
+
+$A * (B + C) = A * B + A * C$
+
+### Associative
+
+$A * (B * C) = (A * B) * C = B * (A * C)$
+
 ## Determinant of Matrix
 
 - Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
