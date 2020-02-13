@@ -383,6 +383,14 @@ Its more like applying limits(domain) to the matrix A to create a subset(image) 
 - x-coordinate of all vector = no change, $hat i$ = no change but $hat j & hat k$ = rotated with $theta$
 - Transformation Matrix $[[1, 0, 0], [0, cos theta, -sin theta],[0, sin theta, cost theta]]$
 
+## Compositions of linear transformations
+
+- 2 Transformations $S:x->y$ and $T:y->z$ where $x sube RR^n, y sube RR^m, z sube RR^l$
+- Composition of T with S $T @ S:x->z$
+- $T @ S = T(S(vec x)) = T(A_(m**n) * vec x) $
+- $= B_(l**m) (A_(m**n) * vec x) = B * A * vec x = C_(l**n) * vec x$
+- $=B [[vec a_1, ..., vec a_n]] vec x = [[B vec a_1, ..., B vec a_n]] vec x$
+
 ## Matrix Multiplication
 
 - Applying a transformation to a vector
