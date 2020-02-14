@@ -426,6 +426,16 @@ $A * (B + C) = A * B + A * C$
 
 $A * (B * C) = (A * B) * C = B * (A * C)$
 
+## Inverse functions
+
+- $f^-1:y->x$ where $f:x->y$
+
+### Rules
+
+- f is **invertible** $<=> EE f^-1:y->x$
+- such that $f^-1 @ f = I_x and f @ f^-1 = I_y$
+- $<=> AA y in Y EE$ **a Unique solution** to $f(x)=y$
+
 ## Determinant of Matrix
 
 - Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
