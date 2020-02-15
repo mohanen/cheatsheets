@@ -442,7 +442,8 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 
 ### Surjective
 
-**onto** = every elements in co-domain mapped to domain
+- **onto** = every elements in co-domain mapped to domain
+- $T:RR^n->RR^m = A_(m**n) * vec x$ = surjective $<=> Rank(A) = m$ = No. of pivot entries in reduced row echelon form
 
 ### Injective
 
@@ -490,7 +491,7 @@ $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$
 
 - $C(A) = Span(vec v_1, vec v_2,.. vec v_n) $
 - Valid subspace - has $vec o$ & closed under addition & multiplication
-- Linearly independent vectors = **Basis** of Column space = No. of pivot entries in row echelon form = **Rank** of a matrix
+- Linearly independent vectors = **Basis** of Column space = No. of pivot entries in reduced row echelon form = **Rank** of a matrix
 
 ### **Intuition**
 
