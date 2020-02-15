@@ -432,9 +432,25 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 
 ### Rules
 
-- f is **invertible** $<=> EE f^-1:y->x$
-- such that $f^-1 @ f = I_x and f @ f^-1 = I_y$
-- $<=> AA y in Y EE$ **a Unique solution** to $f(x)=y$
+- $<=> EE f^-1:y->x$ such that $f^-1 @ f = I_x$ & $f @ f^-1 = I_y$
+- $<=> AA y in Y EE$ **a Unique solution** to $f(x)=y$ that is $AA y$ = **surjective** & Unique solution = **injective**
+- $<=>$ f is **Bijective**
+
+## Surjective & Injective
+
+![mapping](https://www.mathsisfun.com/sets/images/function-mapping.svg)
+
+### Surjective
+
+**onto** = every elements in co-domain mapped to domain
+
+### Injective
+
+**1 to 1** = one element in domain mapped to one element in co-domain
+
+### Bijective
+
+Both **Surjective & Injective**
 
 ## Determinant of Matrix
 
