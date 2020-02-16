@@ -429,6 +429,8 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 ## Inverse functions
 
 - $f^-1:y->x$ where $f:x->y$
+- Mapping from **co-domain to domain**
+- Inverse functions are also **linear**
 
 ### Rules
 
@@ -459,13 +461,13 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - **1 to 1** = Each element of the co-domain is mapped to by **at most one** element of the domain
 - $T(vec x_1) = T(vec x_2) => vec x_1 = vec x_2$ or $vec x_1 != vec x_2 => T(vec x_1) != T(vec x_2)$
 - **1 to 1** $=> **N(A)** = {vec 0} =>$ A is **Linearly independent** & forms **basis of C(A)**
-- $=> T:RR^n->RR^m = A_(m**n) * vec x$ = Injective $<=> Rank(A) = n$ = No. of pivot entries in reduced row echelon form\$
+- $=> T:RR^n->RR^m = A_(m**n) * vec x$ = Injective $<=> Rank(A) = n$ = No. of pivot entries in reduced row echelon form
 
 ## Bijective
 
 ### Rules
 
-- If each element of the co-domain is mapped to by exactly one element of the domain
+- If each element of the co-domain is mapped to by **exactly one** element of the domain
 - Both **Surjective & Injective**
 - $:. T:RR^n->RR^m = A_(m**n) * vec x$ = Bijective $<=> Rank(A) = m = n$
 
