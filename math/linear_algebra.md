@@ -435,23 +435,39 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - $<=> EE f^-1:y->x$ such that $f^-1 @ f = I_x$ & $f @ f^-1 = I_y$
 - $<=> AA y in Y EE$ **a Unique solution** to $f(x)=y$ that is $AA y$ = **surjective** & Unique solution = **injective**
 - $<=>$ f is **Bijective**
+- $<=>$ Reduced row echelon form of A = $I_(n*n)$
 
 ## Surjective & Injective
 
 ![mapping](https://www.mathsisfun.com/sets/images/function-mapping.svg)
 
-### Surjective
+## Surjective
 
-- **onto** = every elements in co-domain mapped to domain
-- $T:RR^n->RR^m = A_(m**n) * vec x$ = surjective $<=> Rank(A) = m$ = No. of pivot entries in reduced row echelon form
+### Rules
 
-### Injective
+- **onto** = Each element of the co-domain is mapped to by **at least one** element of the domain
+- $AA vec y in Y, EE vec x in X$ such that $y = T(x)$
+- co-domain = range = C(A) = span of A
+- $=> T:RR^n->RR^m = A_(m**n) * vec x$ = surjective $<=> Rank(A) = m$ = No. of pivot entries in reduced row echelon form
 
-**1 to 1** = one element in domain mapped to one element in co-domain
+### Example
 
-### Bijective
+## Injective
 
-Both **Surjective & Injective**
+### Rules
+
+- **1 to 1** = Each element of the co-domain is mapped to by **at most one** element of the domain
+- $T(vec x_1) = T(vec x_2) => vec x_1 = vec x_2$ or $vec x_1 != vec x_2 => T(vec x_1) != T(vec x_2)$
+- **1 to 1** $=> **N(A)** = {vec 0} =>$ A is **Linearly independent** & forms **basis of C(A)**
+- $=> T:RR^n->RR^m = A_(m**n) * vec x$ = Injective $<=> Rank(A) = n$ = No. of pivot entries in reduced row echelon form\$
+
+## Bijective
+
+### Rules
+
+- If each element of the co-domain is mapped to by exactly one element of the domain
+- Both **Surjective & Injective**
+- $:. T:RR^n->RR^m = A_(m**n) * vec x$ = Bijective $<=> Rank(A) = m = n$
 
 ## Determinant of Matrix
 
@@ -474,7 +490,7 @@ Both **Surjective & Injective**
 
 ### Row echelon form
 
-| Row echelon form                                      | **Reduced** Row echelon form                        |
+| Row echelon form                                      | **Reduced** Row echelon form                    |
 | ----------------------------------------------------- | ----------------------------------------------- |
 | $[[1, a_1, a_2 : x], [0, 1, b_1 : y], [0, 0, 1 : z]]$ | $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$ |
 
