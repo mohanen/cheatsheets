@@ -490,11 +490,14 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - add rows $r_1 + r_2 -> r_2$
 - combination of above $-2r_1 + 3r_2 -> r_2$
 
-### Row echelon form
+## Row echelon form
 
 | Row echelon form                                      | **Reduced** Row echelon form                    |
 | ----------------------------------------------------- | ----------------------------------------------- |
 | $[[1, a_1, a_2 : x], [0, 1, b_1 : y], [0, 0, 1 : z]]$ | $[[1, 0, 0 : x], [0, 1, 0 : y], [0, 0, 1 : z]]$ |
+
+- Row operations on A = Linear Transformation on column vectors of A
+- Applying Row operations on $[A|I] = [I|A^-1]$
 
 ## Matrix Subspaces
 
