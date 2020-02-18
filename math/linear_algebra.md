@@ -471,6 +471,9 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - Both **Surjective & Injective**
 - $:. T:RR^n->RR^m = A_(m**n) * vec x$ = Bijective $<=> Rank(A) = m = n$
 
+## Finding Inverse 
+- Applying Reduced row echelon form on $[A|I] = [I|A^-1]$
+
 ## Determinant of Matrix
 
 - Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
