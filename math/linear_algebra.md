@@ -439,7 +439,6 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - $<=>$ f is **Bijective**
 - $<=>$ Reduced row echelon form of A = $I_(n*n) => rref([A|I]) = [I|A^-1]$
 
-
 ## Surjective & Injective
 
 ![mapping](https://www.mathsisfun.com/sets/images/function-mapping.svg)
@@ -475,19 +474,18 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 ## 2x2 Inverse
 
 - $[A|I]$ = $[[a, b, |, 1, 0], [c, d, |, 0, 1]]$
-- $T_1([[c_1],[c_2]]) = [[c_1],[a c_2 - c c_1]]$ 
+- $T_1([[c_1],[c_2]]) = [[c_1],[a c_2 - c c_1]]$
 - $T_1([A|I]) = [[a, b, |, 1, 0], [0, ad-bc, |, -c, a]]$
-- $T_2([[c_1],[c_2]]) = [[(ad-bc)c_1 - b c_2],[c_2]]$ 
+- $T_2([[c_1],[c_2]]) = [[(ad-bc)c_1 - b c_2],[c_2]]$
 - $=> [[(ad-bc)a, 0, |, ad, -ab], [0, ad-bc, |, -c, a]]$
-- $T_3([[c_1],[c_2]]) = [[c_1/((ad-bc)a)],[c_2/(ad-bc)]]$ 
+- $T_3([[c_1],[c_2]]) = [[c_1/((ad-bc)a)],[c_2/(ad-bc)]]$
 - $=>[[1, 0, |, d/(ad-bc), -b/((ad-bc))], [0, 1, |, -c/(ad-bc), a/(ad-bc)]]$
 - $=> A^-1 = 1/(ad-bc) [[d, -b], [-c, a]]$
 - If $ad-bc = 0$ means $A^-1$ is undefined. where $ad-bc = Det(A)$
 
-
 ## Rank of a Matrix
 
-- $A_(m**n)$ = n column vectors with m elements or m row vectors with n elements 
+- $A_(m**n)$ = n column vectors with m elements or m row vectors with n elements
 - Maximum number of **linearly independent** column or row vectors
 - The column rank and the row rank are always equal
 - Rank denotes the span/dimension of im(T)
@@ -498,8 +496,29 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
 - Flipping = -ve determinant
 - Determinant $!= 0 <=> $ Columns of the matrix are linearly independent
-- $det ([[a, c], [b, d]]) = ad - cb$
+
+### 2x2 Matrix
+
+- 2x2 Matrix $det ([[a, c], [b, d]]) = ad - cb$
 - For $hat i & hat j$ $det ([[1, 0], [0, 1]]) = 1 * 1 - 0 * 0 = 1$
+
+## Finding Determinants
+
+### 2x2 Matrix
+
+- $det ([[a, c], [b, d]]) = ad - cb$
+
+### 3x3 Matrix
+
+- $A_(3 ** 3) = [[a_11, a_12, a_13], [a_21, a_22, a_23], [a_31, a_32, a_33]]$
+
+$det(A) = a_11 det(A_11) - a_12 det(A_12) + a_13 det(A_13)$
+
+- $A_11 = [[ a_22, a_23], [a_32, a_33]]$ is the sub matrix formed by **ignoring the row and column it is in** and similarly it is found for $A_12 and A_13$
+
+### nxn Matrix
+
+- As we did in 3x3, for nxn matrix also we have to **multiply element and its sub matrix recursively** until it reduce down to 2x2 Matrix
 
 ## Solving with Matrices
 
