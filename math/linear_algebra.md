@@ -437,7 +437,8 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - $<=> EE f^-1:y->x$ such that $f^-1 @ f = I_x$ & $f @ f^-1 = I_y$
 - $<=> AA y in Y EE$ **a Unique solution** to $f(x)=y$ that is $AA y$ = **surjective** & Unique solution = **injective**
 - $<=>$ f is **Bijective**
-- $<=>$ Reduced row echelon form of A = $I_(n*n)$
+- $<=>$ Reduced row echelon form of A = $I_(n*n) => rref([A|I]) = [I|A^-1]$
+
 
 ## Surjective & Injective
 
@@ -471,10 +472,28 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - Both **Surjective & Injective**
 - $:. T:RR^n->RR^m = A_(m**n) * vec x$ = Bijective $<=> Rank(A) = m = n$
 
-## Finding Inverse 
-- Applying Reduced row echelon form on $[A|I] = [I|A^-1]$
+## 2x2 Inverse
 
-## Determinant of Matrix
+- $[A|I]$ = $[[a, b, |, 1, 0], [c, d, |, 0, 1]]$
+- $T_1([[c_1],[c_2]]) = [[c_1],[a c_2 - c c_1]]$ 
+- $T_1([A|I]) = [[a, b, |, 1, 0], [0, ad-bc, |, -c, a]]$
+- $T_2([[c_1],[c_2]]) = [[(ad-bc)c_1 - b c_2],[c_2]]$ 
+- $=> [[(ad-bc)a, 0, |, ad, -ab], [0, ad-bc, |, -c, a]]$
+- $T_3([[c_1],[c_2]]) = [[c_1/((ad-bc)a)],[c_2/(ad-bc)]]$ 
+- $=>[[1, 0, |, d/(ad-bc), -b/((ad-bc))], [0, 1, |, -c/(ad-bc), a/(ad-bc)]]$
+- $=> A^-1 = 1/(ad-bc) [[d, -b], [-c, a]]$
+- If $ad-bc = 0$ means $A^-1$ is undefined. where $ad-bc = Det(A)$
+
+
+## Rank of a Matrix
+
+- $A_(m**n)$ = n column vectors with m elements or m row vectors with n elements 
+- Maximum number of **linearly independent** column or row vectors
+- The column rank and the row rank are always equal
+- Rank denotes the span/dimension of im(T)
+- $Rank(A)$ = No. of pivot entries in reduced row echelon form
+
+## Determinant of a Matrix
 
 - Determinant of 2D Matrix = Area, 3D Matrix = Volume & so on
 - Flipping = -ve determinant
