@@ -497,18 +497,12 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - Flipping = -ve determinant
 - Determinant $!= 0 <=> $ Columns of the matrix are linearly independent
 
-### 2x2 Matrix
+## 2x2 Matrix Determinants
 
 - 2x2 Matrix $det ([[a, c], [b, d]]) = ad - cb$
 - For $hat i & hat j$ $det ([[1, 0], [0, 1]]) = 1 * 1 - 0 * 0 = 1$
 
-## Finding Determinants
-
-### 2x2 Matrix
-
-- $det ([[a, c], [b, d]]) = ad - cb$
-
-### 3x3 Matrix
+## 3x3 Matrix Determinants
 
 - $A_(3 ** 3) = [[a_11, a_12, a_13], [a_21, a_22, a_23], [a_31, a_32, a_33]]$
 
@@ -516,9 +510,18 @@ $det(A) = a_11 det(A_11) - a_12 det(A_12) + a_13 det(A_13)$
 
 - $A_11 = [[ a_22, a_23], [a_32, a_33]]$ is the sub matrix formed by **ignoring the row and column it is in** and similarly it is found for $A_12 and A_13$
 
-### nxn Matrix
+### Rule of Sarrus
 
-- As we did in 3x3, for nxn matrix also we have to **multiply element and its sub matrix recursively** until it reduce down to 2x2 Matrix
+![](https://i.stack.imgur.com/6xWGC.png)
+
+- Memorization scheme for **3×3 determinant**
+- Simplifying a 3x3 matrix will lead to a result of $det(A) = (a_1 b_2 c_3 + b_1 c_2 a_3 + c_1  a_2 _b_3 ) - (a_3 b_2 c_1 +  b_3 c_2 a_1 + c_3  a_2 _b_1 )$
+
+## nxn Matrix Determinants
+
+- As we did in 3x3, for nxn matrix also we have to **multiply element and its determinant sub matrix recursively** until it reduce down to 2x2 Matrix
+- sign for a element $(i,j)= -1^((i+j))$ forms a checker board pattern
+- Choose the row with more 0 (so the element multiplied by it sub matrix determinant will be 0) to simplify the calculation.
 
 ## Solving with Matrices
 
