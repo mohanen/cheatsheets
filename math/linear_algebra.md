@@ -523,6 +523,20 @@ $det(A) = a_11 det(A_11) - a_12 det(A_12) + a_13 det(A_13)$
 - sign for a element $(i,j)= -1^((i+j))$ forms a checker board pattern
 - Choose the row with more 0 (so the element multiplied by it sub matrix determinant will be 0) to simplify the calculation.
 
+## Determinant of $k bb A_(n**n)$
+
+### 1 row multiplied by scalar
+
+$|[a, b], [kc, kd]| = kad - kbc = k (ad-bc) = k |[a, b], [c, d]|$
+
+### All row multiplied by scalar
+
+$|[ka, kb], [kc, kd]| = k^2 ad - k^2 bc = k^2 (ad-bc) = k^2 |[a, b], [c, d]|$
+
+### nxn matrix
+
+$det(kA_(n**n)) = k^n det(A_(n**n))$
+
 ## Solving with Matrices
 
 ### Gaussian elimination
