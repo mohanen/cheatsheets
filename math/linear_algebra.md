@@ -556,6 +556,13 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 
 - $rref(A) != I$ means that the transformation is squishing the dimension, like a cube to a plane or plane to a line.
 
+## Determinant after row operations
+
+- As row vectors $A = [[vec a_1], [vec a_2]], B = [[vec a_1], [vec a_2 * 3 vec a_1]]$
+- $|B| = |[vec a_1], [vec a_2]| + |[vec a_1], [3 vec a_1]| because $ Determinant sum
+- $|B| = |A| + 0 because$ Duplicate row $ => det = 0$
+- $:.$ Row operations = **No effect** on Determinant
+
 ## Solving with Matrices
 
 ### Gaussian elimination
