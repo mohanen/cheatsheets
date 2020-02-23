@@ -548,6 +548,14 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $|Z| = a(x_2+y_2) - b(x_1+y_1)$
 - $ = ax_2 - bx_1 + ay_2 - by_1 = |X| + |Y|$
 
+## Duplicate row determinant
+
+- Duplicate rows in $A => rref(A) != I :. A$ is not invertible $=> |A| = 0$
+
+### **Intuition**
+
+- $rref(A) != I$ means that the transformation is squishing the dimension, like a cube to a plane or plane to a line.
+
 ## Solving with Matrices
 
 ### Gaussian elimination
