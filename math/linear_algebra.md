@@ -452,8 +452,6 @@ $A * (B * C) = (A * B) * C = B * (A * C)$
 - co-domain = range = C(A) = span of A
 - $=> T:RR^n->RR^m = A_(m**n) * vec x$ = surjective $<=> Rank(A) = m$ = No. of pivot entries in reduced row echelon form
 
-### Example
-
 ## Injective
 
 ### Rules
@@ -536,6 +534,19 @@ $|[ka, kb], [kc, kd]| = k^2 ad - k^2 bc = k^2 (ad-bc) = k^2 |[a, b], [c, d]|$
 ### nxn matrix
 
 $det(kA_(n**n)) = k^n det(A_(n**n))$
+
+## Determinant when row is added
+
+- $A = B + C$ doesn't mean $|A| = |B| + |C|$
+- $|A| = |B| + |C| iff $ In B and C, all rows except one should be same
+
+### Example
+
+$X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x_2 + y_2]]$
+
+- $|X| = ax_2 - bx_1, |Y| = ay_2 - by_1$
+- $|Z| = a(x_2+y_2) - b(x_1+y_1)$
+- $ = ax_2 - bx_1 + ay_2 - by_1 = |X| + |Y|$
 
 ## Solving with Matrices
 
