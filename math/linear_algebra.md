@@ -563,11 +563,11 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $|B| = |A| + 0 because$ Duplicate row $ => det = 0$
 - $:.$ Row operations = **No effect** on Determinant
 
-## Upper triangular determinant
+## Triangular matrix determinant
 
 ![](https://mathonline.wdfiles.com/local--files/triangular-matrices/Screen%20Shot%202014-06-08%20at%2012.52.45%20PM.png)
 
-- Determinant = **product of the diagonal elements**.
+- Determinant of Upper or Lower Triangular Matrix = **product of the diagonal elements**.
 
 ### Example
 
