@@ -519,7 +519,7 @@ $det(A) = a_11 det(A_11) - a_12 det(A_12) + a_13 det(A_13)$
 
 - As we did in 3x3, for nxn matrix also we have to **multiply element and its determinant sub matrix recursively** until it reduce down to 2x2 Matrix
 - sign for a element $(i,j)= -1^((i+j))$ forms a checker board pattern
-- Choose the row with more 0 (so the element multiplied by it sub matrix determinant will be 0) to simplify the calculation.
+- Choose the row/column with more 0 (so the element multiplied by it sub matrix determinant will be 0) to simplify the calculation.
 
 ## Determinant of $k bb A_(n**n)$
 
@@ -562,6 +562,18 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $|B| = |[vec a_1], [vec a_2]| + |[vec a_1], [3 vec a_1]| because $ Determinant sum
 - $|B| = |A| + 0 because$ Duplicate row $ => det = 0$
 - $:.$ Row operations = **No effect** on Determinant
+
+## Upper triangular determinant
+
+![](https://mathonline.wdfiles.com/local--files/triangular-matrices/Screen%20Shot%202014-06-08%20at%2012.52.45%20PM.png)
+
+- Determinant = **product of the diagonal elements**.
+
+### Example
+
+- $A_(3 ** 3) = [[a_11, a_12, a_13], [0, a_22, a_23], [0, 0, a_33]]$
+- $|A| = a_11 |A_11| - 0 * |A_21| + 0 * |A_31|$
+- $= a_11 |[a_22, a_23], [0, a_33]| = a_11 (a_22 a_33 - 0) = a_11 a_22 a_33$
 
 ## Solving with Matrices
 
