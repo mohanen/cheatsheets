@@ -625,3 +625,13 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 ### **Intuition**
 
 > Its just the span of the vectors in the matrices
+
+## Transpose of a Matrix
+
+- Rows becomes columns and vice versa
+- $A = [[a, b], [c, d]], A^T = [[a, c], [b, d]]$
+- Determinant $|A| = |A^T|$
+- Product $(AB)^T = B^T A^T$
+- Sum $(A+B)^T = A^T + B^T$
+- Inverse $(A^-1)^T = (A^T)^-1$
+- Vector $vec v * vec w = vec v^T vec w$
