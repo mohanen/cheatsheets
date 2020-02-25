@@ -576,6 +576,15 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $|A| = a_11 |A_11| - 0 * |A_21| + 0 * |A_31|$
 - $= a_11 |[a_22, a_23], [0, a_33]| = a_11 (a_22 a_33 - 0) = a_11 a_22 a_33$
 
+## Determinant as scaling factor
+
+- $vec v_1, vec v_2, vec v_3, vec v_4$ forms a rectangle where area = $K$
+- $T:RR^2->RR^2 = A vec x_1$ Area after transformation T = $K * |A|$
+
+### **Intuition**
+
+- Determinant of Transformation Matrix A gives the Scaling of the absolute Area formed by the vectors. |I|=1 means no transformation so scale = 1.
+
 ## Solving with Matrices
 
 ### Gaussian elimination
