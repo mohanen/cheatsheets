@@ -636,3 +636,8 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Inverse $(A^-1)^T = (A^T)^-1$
 - Vector $vec v * vec w = vec v^T vec w$ & $(A vec x) * vec y = vec x * (A^T vec y)$
 - Rank $Rank(A) = Rank(A^T)$
+- $C(A^T)$ = Row Space of A
+- $N(A^T)$ = Left Null space of A and vice versa
+- $C(A)$ is orthogonal to $N(A^T)$ and $C(A^T)$ is orthogonal to $N(A)$
+
+
