@@ -639,5 +639,14 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $C(A^T)$ = Row Space of A
 - $N(A^T)$ = Left Null space of A and vice versa
 - $C(A)$ is orthogonal to $N(A^T)$ and $C(A^T)$ is orthogonal to $N(A)$
+- $A A^T$ is invertible
 
+## $A A^T$ is Invertible
 
+- Let $A$ be linearly independent such that $N(A)={vec 0}$
+- $vec v = N(A^T A) => A^T A vec v = vec 0$
+- $vec v^T A^T A vec v = vec v^T vec 0$
+- $=> (A vec v)^T A vec v = vec v^T vec 0 because v^T A^T = (Av)^T$
+- $=> (A vec v) * A vec v = vec v * vec 0 = 0 because v^T A = v * A$
+- $=> (||A vec v||)^2 = 0 => A vec v = vec 0$
+- $=> $N(A^T A) = N(A) = {vec 0|\$
