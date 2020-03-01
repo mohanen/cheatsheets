@@ -649,4 +649,5 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $=> (A vec v)^T A vec v = vec v^T vec 0 because v^T A^T = (Av)^T$
 - $=> (A vec v) * A vec v = vec v * vec 0 = 0 because v^T A = v * A$
 - $=> (||A vec v||)^2 = 0 => A vec v = vec 0$
-- $=> N(A^T A) = N(A) = {vec 0}$
+- $=> N(A^T A) = N(A) = {vec 0} => vec v = vec 0$
+- $=> A^T A vec v = vec 0 iff vec v = 0$ $:. A^T A$ = linearly independent $=> A A^T$ is Invertible
