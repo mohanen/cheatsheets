@@ -512,7 +512,7 @@ $det(A) = a_11 det(A_11) - a_12 det(A_12) + a_13 det(A_13)$
 
 ![](https://i.stack.imgur.com/6xWGC.png)
 
-- Memorization scheme for **3×3 determinant**
+- Memorization scheme for **3x3 determinant**
 - Simplifying a 3x3 matrix will lead to a result of $det(A) = (a_1 b_2 c_3 + b_1 c_2 a_3 + c_1  a_2 _b_3 ) - (a_3 b_2 c_1 +  b_3 c_2 a_1 + c_3  a_2 _b_1 )$
 
 ## nxn Matrix Determinants
@@ -649,4 +649,4 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $=> (A vec v)^T A vec v = vec v^T vec 0 because v^T A^T = (Av)^T$
 - $=> (A vec v) * A vec v = vec v * vec 0 = 0 because v^T A = v * A$
 - $=> (||A vec v||)^2 = 0 => A vec v = vec 0$
-- $=> $N(A^T A) = N(A) = {vec 0|\$
+- $=> N(A^T A) = N(A) = {vec 0}$
