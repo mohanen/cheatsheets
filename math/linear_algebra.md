@@ -651,3 +651,16 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $=> (||A vec v||)^2 = 0 => A vec v = vec 0$
 - $=> N(A^T A) = N(A) = {vec 0} => vec v = vec 0$
 - $=> A^T A vec v = vec 0 iff vec v = 0$ $:. A^T A$ = linearly independent $=> A A^T$ is Invertible
+
+# Alternate coordinate systems (bases)
+
+## Orthogonal complements
+
+- $V$ is some Subspace of $RR^n$
+- Orthogonal complement V perp $V^⊥={vec x in RR^n | vec x * vec v = 0 " for every " vec v in V }$
+
+### $V^⊥$ is a Subspace.
+
+- Consider $vec a, vec b in V^⊥$
+- Closed under Addition $vec a * vec v = 0$ & $vec b * vec v = 0 $ $=>(vec a + vec b) * vec v = vec a  * vec v + vec b * vec v = 0$
+- Closed under Multiplication $c vec a * vec v = c (vec a * vec v) = c (0) = 0$
