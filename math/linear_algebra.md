@@ -664,3 +664,12 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Consider $vec a, vec b in V^⊥$
 - Closed under Addition $vec a * vec v = 0$ & $vec b * vec v = 0 $ $=>(vec a + vec b) * vec v = vec a  * vec v + vec b * vec v = 0$
 - Closed under Multiplication $c vec a * vec v = c (vec a * vec v) = c (0) = 0$
+
+### orthogonal complement of Matrix A
+
+- $N(A)$ is orthogonal complement of row space of A $=> N(A) = (C(A^T))^⊥$
+- $:. (C(A))^⊥ = N(A^T)$
+
+### dim(orthogonal complement of V)
+
+- $dim(V) + dim(V^T) = n$
