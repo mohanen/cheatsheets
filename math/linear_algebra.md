@@ -665,11 +665,34 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Closed under Addition $vec a * vec v = 0$ & $vec b * vec v = 0 $ $=>(vec a + vec b) * vec v = vec a  * vec v + vec b * vec v = 0$
 - Closed under Multiplication $c vec a * vec v = c (vec a * vec v) = c (0) = 0$
 
-### orthogonal complement of Matrix A
+### dim(orthogonal complement of V)
+
+- $dim(V) + dim(V^⊥) = n$
+- $dim(V)$ = No. of **pivot** entries $rref(V)$
+- $dim(V^⊥)$ = Nullity = No. of **non pivot** entries $rref(V)$
+
+### **Intution**
+
+- Orthogonal complements V perp are subspace that represents the missed out dimension in a subspace V.
+- ${vec 0}$ is orthogonal to all elements in V and also a member of V, $:.$ it exists in both $V & V^⊥$
+
+## Orthogonal complement of Matrix A
 
 - $N(A)$ is orthogonal complement of row space of A $=> N(A) = (C(A^T))^⊥$
 - $:. (C(A))^⊥ = N(A^T)$
 
-### dim(orthogonal complement of V)
+## Orthogonal complements Properties
 
-- $dim(V) + dim(V^T) = n$
+- $V nn V^⊥ = {vec 0}$
+- $V uu V^⊥ = RR^n$
+- $vec a in RR^n = vec v in V+ vec x in V^⊥$ is unique
+
+### Proof $(V^⊥)^⊥ = V$
+
+- $vec x in (V^⊥)^⊥$
+- $vec x = vec v in V + vec w in V^⊥ :. V uu V^⊥ = RR^n$
+- $vec x * vec w = 0 because$ orthogonal complements
+- $=> (vec v + vec w) * vec w = vec v * vec w + vec w * vec w = 0$
+- $=> vec w * vec w = 0 because$ orthogonal complements
+- $=> ||vec w|| = 0 => vec w = vec 0$
+- $:. vec x in (V^⊥)^⊥ = vec v + vec w = vec v + vec 0 = vec v in V$
