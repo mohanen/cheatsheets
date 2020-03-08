@@ -696,3 +696,17 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $=> vec w * vec w = 0 because$ orthogonal complements
 - $=> ||vec w|| = 0 => vec w = vec 0$
 - $:. vec x in (V^⊥)^⊥ = vec v + vec w = vec v + vec 0 = vec v in V$
+
+### Orthogonal complement of N(A)
+
+- $N(A)^⊥ = (C(A^T)^⊥)^⊥ = C(A^T)$
+- $N(A^T)^⊥ = (C(A)^⊥)^⊥ = C(A)$
+
+### Unique rowspace solution to $A vec x = vec b$
+
+- $vec x = vec r_0 in C(A^T) + vec n_0 in N(A)$ $because  dim(V) + dim(V^⊥) = n$
+- $A vec r_0 = A (vec x_0 - vec n_0 ) = A vec x_0 - A vec n_0  = vec b$ $because A vec n_0 = 0$
+- Consider another $vec r_1 in C(A^T)$ and $A vec r_1 = vec b$
+- $(vec r_0 - vec r_1) in C(A^T) because$ subspace
+- $:. A(vec r_0 - vec r_1) = A vec r_0 - A vec r_1 = vec b - vec b = vec 0$
+- $=> vec r_0 - vec r_1 = vec 0 => vec r_0 = vec r_1$ $:.$ **Unique** and shortest solution (⊥r distance)
