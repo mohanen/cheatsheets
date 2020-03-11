@@ -710,3 +710,7 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $(vec r_0 - vec r_1) in C(A^T) because$ subspace
 - $:. A(vec r_0 - vec r_1) = A vec r_0 - A vec r_1 = vec b - vec b = vec 0$
 - $=> vec r_0 - vec r_1 = vec 0 => vec r_0 = vec r_1$ $:.$ **Unique** and shortest solution (⊥r distance)
+
+## Orthogonal projections
+
+- $Proj_(C(A^T)) (vec s) = vec r$ where $vec s = vec r + vec n$
