@@ -714,4 +714,15 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 ## Orthogonal projections
 
 - $Proj_(C(A^T)) (vec s) = vec r$ where $vec s = vec r + vec n$
-- $Proj_V (vec x) =$ some unique vector in V such that $vec x - proj_V (vec x)$ is orthogonal to V $vec x = vec w + vec v$ where $vec w = (vec x - proj_V (x)) in V^⊥$ and $vec v in V$
+- $Proj_V (vec x) =$ some unique vector in V such that $vec x - proj_V (vec x)$ is orthogonal to V $vec x = vec w + vec v$ where $vec w = (vec x - proj_V (vec x)) in V^⊥$ and $vec v in V$
+- $vec x = Proj_V (vec x) + Proj_(V^⊥) (vec x)$
+
+### projection onto a subspace is a linear transformation
+
+- $Proj_V (vec x) = A vec y in V$ where the projected vector is a linear combination $vec y$ of the basis vectors $A$ of the subspace $V$
+- $vec x - Proj_V (vec x) = Proj_(V^⊥) (vec x)$
+- $=> vec x - Proj_V (vec x) in N(A^T)$
+- $=> A^T(vec x - Proj_V (vec x)) = 0$
+- $A^T vec x - A^T A vec y = 0$ $because Proj_V (vec x) = A vec y$
+- $(A^T A)^(-1) A^T vec x = (A^T A)^(-1) (A^T A) vec y = vec y$
+- $Proj_V (vec x) = A (A^T A)^(-1) A^T vec x$ Thus $A (A^T A)^(-1) A^T$ is some Matrix multiplied with $vec x$ forming a linear transformation
