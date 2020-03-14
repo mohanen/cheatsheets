@@ -727,3 +727,11 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $A^T vec x - A^T A vec y = 0$ $because Proj_V (vec x) = A vec y$
 - $(A^T A)^(-1) A^T vec x = (A^T A)^(-1) (A^T A) vec y = vec y$
 - $Proj_V (vec x) = A (A^T A)^(-1) A^T vec x$ Thus $A (A^T A)^(-1) A^T$ is some Matrix multiplied with $vec x$ forming a linear transformation
+
+### Least squares approximation
+
+- No solution for $A vec x = vec b$, then we can find the closest solution, i.e, $EE vec x_0 $ it minimizes $||vec b - A vec x_0||$
+- $A vec x_0 = Proj_(C(A)) vec b => A vec x_0 - vec b = Proj_(C(A)) vec b - vec b$
+- $A vec x_0 - vec b in N(A) because Proj_(C(A)) vec b - vec b in C(A)^⊥$
+- $=> A^T(A vec x_0 - vec b) = 0 => A^T A vec x_0 - A^T vec b = 0$
+- $:. A^T A vec x_0 = A^T vec b$
