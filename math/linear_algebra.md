@@ -716,6 +716,7 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $Proj_(C(A^T)) (vec s) = vec r$ where $vec s = vec r + vec n$
 - $Proj_V (vec x) =$ some unique vector in V such that $vec x - proj_V (vec x)$ is orthogonal to V $vec x = vec w + vec v$ where $vec w = (vec x - proj_V (vec x)) in V^⊥$ and $vec v in V$
 - $vec x = Proj_V (vec x) + Proj_(V^⊥) (vec x)$
+- Projection is closest vector in subspace
 
 ### projection onto a subspace is a linear transformation
 
