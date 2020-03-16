@@ -758,3 +758,9 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $[vec a]_B = [[c_1], [c_2], [vdots], [c_k]]$ $=> vec a = c_1 vec v_1 + c_2 vec v_2 + ... + c_k vec v_k$
 - $=> [vec v_1, vec v_2, ..., vec v_k] [[c_1], [c_2], [vdots], [c_k]] = vec a$
 - $:. C [vec a]_B = vec a$ where **C** is the change of basis matrix
+
+## Invertible change of basis matrix C
+
+- C should be a square matrix - span of the subspace should be equal to the Real co-ordinate space it is in.
+- C should have linearly independent columns. Implicit since C is basis matrix
+- $C [vec a]_B = vec a => [vec a]_B = C^-1 vec a$
