@@ -751,3 +751,10 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 ### **Intuition**
 
 - Change of basis is **Change of coordinate system**, basis is the **basic building block** in a subspace and the basis can be in any form.
+
+## Change of basis matrix
+
+- $B = {vec v_1, vec v_2, ..., vec v_k}$
+- $[vec a]_B = [[c_1], [c_2], [vdots], [c_k]]$ $=> vec a = c_1 vec v_1 + c_2 vec v_2 + ... + c_k vec v_k$
+- $=> [vec v_1, vec v_2, ..., vec v_k] [[c_1], [c_2], [vdots], [c_k]] = vec a$
+- $:. C [vec a]_B = vec a$ where **C** is the change of basis matrix
