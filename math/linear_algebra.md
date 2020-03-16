@@ -735,3 +735,19 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $A vec x_0 - vec b in N(A) because Proj_(C(A)) vec b - vec b in C(A)^⊥$
 - $=> A^T(A vec x_0 - vec b) = 0 => A^T A vec x_0 - A^T vec b = 0$
 - $:. A^T A vec x_0 = A^T vec b$
+
+## Change of basis
+
+- So far we use $hat i & hat j$ unit vectors which are also basis of the subspace, as our coordinates
+- But any Basis vectors of a subspace can be used as coordinates
+
+### Example
+
+- $hat i = [[1], [0]] $ and $ hat j = [[0], [1]] $ Unit vectors of $RR^2$
+- $B = {vec v_1, vec v_2}$ where $vec v_1 = [[2], [1]]$ and $vec v_2 = [[1], [2]]$ Basis of subspace $RR^2$
+- $vec a = [[8], [7]]$ is in terms of unit vectors $8 hat i + 7 hat j$
+- $[vec a]_B = [[3], [2]] because vec a = 3 vec v_1 + 2 vec v_1$
+
+### **Intuition**
+
+- Change of basis is **Change of coordinate system**, basis is the **basic building block** in a subspace and the basis can be in any form.
