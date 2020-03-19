@@ -764,3 +764,14 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - C should be a square matrix - span of the subspace should be equal to the Real co-ordinate space it is in.
 - C should have linearly independent columns. Implicit since C is basis matrix
 - $C [vec a]_B = vec a => [vec a]_B = C^-1 vec a$
+
+## Transformation matrix wrt a basis
+
+- In standard coordinates $T:RR^n->RR^n$ $T(vec x) = A vec x$
+- Let basis vectors of a subspace $B = {vec v_1, vec v_2, ..., vec_n}$
+- In B coordinates $[T(vec x)]_B = D[vec x]_B$
+- From above $vec x = C[vec x]_B$ $=> [vec x]_B = C^-1 vec x$
+- $D[vec x]_B = [T(vec x)]_B = [A vec x]_B$
+- $=> [A vec x]_B = C^-1 A vec x$ $because [vec x]_B = C^-1 vec x$
+- $=> C^-1 A vec x = C^-1 A C [vec x]_B$ $because vec x = C[vec x]_B$
+- $:. D = C^-1 A C$
