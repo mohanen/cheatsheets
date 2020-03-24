@@ -775,3 +775,9 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $=> [A vec x]_B = C^-1 A vec x$ $because [vec x]_B = C^-1 vec x$
 - $=> C^-1 A vec x = C^-1 A C [vec x]_B$ $because vec x = C[vec x]_B$
 - $:. D = C^-1 A C$
+
+## Changing coordinate systems to help find a transformation matrix
+
+- Say in $RR^2$ if you want to flip a vector along a axis its pretty straight forward, just multiply -1 with opposite axis value
+- Now if you want to flip the vector along a line that's not in axis
+- This might seem tough, but if you represent the vector by using a vector in the line(basis) as coordinates then it is same as above 
