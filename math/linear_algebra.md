@@ -782,3 +782,19 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Now if you want to flip the vector along a line that's not in axis
 - This might seem tough, but if you represent the vector by using a vector in the line(basis) as coordinates then it is same as above
 - In this case we find $D = [[1, 0], [0, -1]]$ in $[T(vec x)]_B=D[x]_B$ and calculate A using $A = CDC^-1$ $because D = C^-1 A C$ where C is the basis vectors B.
+
+# Orthonormal bases and the Gram-Schmidt process
+
+## Orthonormal bases
+
+- **Orthogonal** and **Normalized** Basis vectors.
+- Linearly Independent
+- Orthonormal bases $B = {vec v_1, vec v_2, ..., vec v_n}$
+
+### Normalized
+
+- $||vec v_i|| = 1 | i in 1..n$ i.e, unit vectors
+
+### Orthogonal
+
+- $vec v_i * vec v_j = { 0 for i != j, 1 for i=j:}$
