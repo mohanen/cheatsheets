@@ -798,3 +798,13 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 ### Orthogonal
 
 - $vec v_i * vec v_j = { 0 for i != j, 1 for i=j:}$
+
+## Coordinates wrt orthonormal bases
+
+- wkt $C[vec x]_B = vec x$ and $[vec x]_B = C^-1 vec x$
+- But if C is not invertible we can't have C^-1
+- Consider a orthonormal bases $B = {vec v_1, vec v_2, .., vec v_n}$ of a subspace V and $vec x in V$
+- $vec x = c_1 vec v_1 + ... + c_i vec v_i + ... + c_n vec v_n$
+- $vec v_i * vec x = c_1 vec v_i * vec v_1 + ... + c_i vec v_i * vec v_i + ... + c_n vec v_i * vec v_n$
+- $=> vec v_i * vec x = c_i$ $:.$ orthongonal and normalized
+- Now $[vec x]_B = [[c_1], [vdots], [c_n]] = [[vec v_1 * vec x], [vdots], [vec v_n * vec x]] $ 
