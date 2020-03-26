@@ -806,3 +806,17 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $vec v_i * vec x = c_1 vec v_i * vec v_1 + ... + c_i vec v_i * vec v_i + ... + c_n vec v_i * vec v_n$
 - $=> vec v_i * vec x = c_i$ $:.$ orthongonal and normalized
 - Now $[vec x]_B = [[c_1], [vdots], [c_n]] = [[vec v_1 * vec x], [vdots], [vec v_n * vec x]] $ 
+
+## Projections with orthonormal bases
+
+- Consider Subspace $V in RR^n$, $B = {vec v_1, vec v_2, ..., vec v_k}$ orthonormal basis for V, and a vector $vec x in RR^n$
+- $vec x = vec v + vec w$ where $vec v in V = Proj_V(vec x)$ and $vec w in V^⊥ = Proj_(V^⊥)(vec x)$
+- $vec x =  c_1 vec v_1 + ... + c_i vec v_i + ... + c_k vec v_k + vec w$
+- $vec v_i * vec x =  c_1 vec v_i * vec v_1 + ... + c_i vec v_i * vec v_i + ... + c_k vec v_i * vec v_k + vec v_i * vec w$ $=> vec v_i * vec x = c_i$
+- $:. Proj_V (vec x) = (vec v_1 * vec x) vec v_1 + ... + (vec v_k * vec x) vec v_k$
+
+### $Proj_V (vec x) = A (A^T A)^-1 A^T vec x$
+
+- Other way is to find is $Proj_V (vec x) = A (A^T A)^-1 A^T vec x$
+- $Proj_V (vec x) = A (I_k)^-1 A^T vec x$ $:. A^T A = I_k$ for orthonormal
+- $Proj_V (vec x) = A A^T vec x$ $:.  (I_k)^-1 = I_k$
