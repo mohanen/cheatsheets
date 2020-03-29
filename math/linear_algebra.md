@@ -822,3 +822,22 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $Proj_V (vec x) = A A^T vec x$ $:.  (I_k)^-1 = I_k$
 
 > The Subspace is not always $RR^n$, most of the time you are projecting onto a subspace of $RR^n$ so it will have less than n basis vectors. In this case, if the columns are orthonormal than yes $(A^T)A = I$ but $A(A^T)$ is NOT necessarily equal to $I$
+
+## Gram-Schmidt process
+
+- **orthonormalising** a set of vectors
+- Takes a finite, linearly independent set $S = {vec v_1, ..., vec v_k}$ for $k ≤ n$ and generates an orthogonal set $S′ = {vec u_1, ..., vec u_k}$ that spans the same k-dimensional subspace of $RR^n$ as S.
+
+## orthonormalising a subset
+
+- Let subspace $V_1 =  {vec v_1}$ , $V_2 = {vec v_1, vec v_2}$, $V_3 = {vec v_1, vec v_2, vec v_3}$
+- orthonormalising $V_1$ $=>vec u_1 = vec v_1/ ||vec v_1||$ $=> V_1 = {vec u_1}$
+- orthonormalising $V_2$ $=>V_2 = {vec u_1, vec v_2}$ from above
+- Let $vec y_2 = vec v_2 - Proj_(V_1) V_2$ $= vec v_2 - (vec v_2 * vec u_1) vec u_1$
+- $:. vec u_2 =  vec y_2/ ||vec y_2||$ $=> V_2 = {vec u_1, vec u_2}$
+- orthonormalising $V_3$ $=>V_3 = {vec u_1, vec u_2, vec v_3}$ from above
+- Let $vec y_3 = vec v_3 - (Proj_(V_1) V_3 + Proj_(V_2) V_3) $ $= vec v_3 - ( (vec v_3 * vec u_1) vec u_1 + (vec v_3 * vec u_2) vec u_2)$
+- $:. vec u_3 =  vec y_3/ ||vec y_3||$ $=> V_2 = {vec u_1, vec u_2, vec u_3}$
+- and so on for further dimensions
+
+![Gram-Schmidt_orthonormalization_process](https://upload.wikimedia.org/wikipedia/commons/e/ee/Gram-Schmidt_orthonormalization_process.gif)
