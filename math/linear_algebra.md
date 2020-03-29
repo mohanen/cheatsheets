@@ -820,3 +820,5 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Other way is to find is $Proj_V (vec x) = A (A^T A)^-1 A^T vec x$
 - $Proj_V (vec x) = A (I_k)^-1 A^T vec x$ $:. A^T A = I_k$ for orthonormal
 - $Proj_V (vec x) = A A^T vec x$ $:.  (I_k)^-1 = I_k$
+
+> The Subspace is not always $RR^n$, most of the time you are projecting onto a subspace of $RR^n$ so it will have less than n basis vectors. In this case, if the columns are orthonormal than yes $(A^T)A = I$ but $A(A^T)$ is NOT necessarily equal to $I$
