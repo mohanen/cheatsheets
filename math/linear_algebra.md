@@ -841,3 +841,9 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - and so on for further dimensions
 
 ![Gram-Schmidt_orthonormalization_process](https://upload.wikimedia.org/wikipedia/commons/e/ee/Gram-Schmidt_orthonormalization_process.gif)
+
+## eigenvalues & eigenvectors
+
+- For any transformation that maps $T:RR^n->RR^n$, there will be some vectors that are just scaled (i.e, **the span of the vector remains same even after transformation**)
+- This scaled vectors sometimes make a good coordinate system to represent the transformation easily. eg.flip along a line $c vec v_1$ mentioned above
+- $:. T(vec x) = λ vec x$ where $vec x$ = eigen vector and $λ$ = eigen value
