@@ -847,3 +847,35 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - For any transformation that maps $T:RR^n->RR^n$, there will be some vectors that are just scaled (i.e, **the span of the vector remains same even after transformation**)
 - This scaled vectors sometimes make a good coordinate system to represent the transformation easily. eg.flip along a line $c vec v_1$ mentioned above
 - $:. T(vec x) = λ vec x$ where $vec x$ = eigen vector and $λ$ = eigen value
+- A eigen vectors cannot be a $vec 0$, cause for every $λ$ scalar multiplier $vec 0$ will stay unchanged.
+
+## formula for eigenvalues
+
+- Wkt T(vec x) = A vec x\\\\$ for eigen its \\\\$T(vec x) = λ vec x\$
+- $:. A vec x = λ vec x$ $=>A vec x - λ vec x = vec 0$
+- Let $vec x = I_n vec x$ $=>A vec x - λ I_n vec x = vec 0$
+- $=> (A - λ I_n) vec x = vec 0$ $:. vec x = N(A - λ I_n)$
+- $N(A - λ I_n)$ is Non-trivial (since eigen vectors cannot $vec 0$), therefore $A - λ I_n$ is linearly dependent and determinant = 0
+- $:. A vec x = λ vec x$ for non zero $vec x$ $iff |A - λ I_n| = 0$
+
+## 2x2 Eigen Example
+
+- Let $A = [[1, 2], [4, 3]]$
+- wkt $(A - λ I_n) vec x = vec 0$ & $|A - λ I_n| = 0$
+
+### Eigen value
+
+- $| [[1, 2], [4, 3]] -  [[λ, 0], [0, λ]]| = 0$
+- $=> | [[1-λ, 2], [4, 3-λ]]| = (1-λ)(3-λ)-8$
+- $=>3 - λ - 3λ + λ^2 - 8 = λ^2 - 4λ - 5 = 0$
+- $:. (λ - 5) (λ + 1) = 0$ Therefore **Eigen value** for the matrix A is $λ = -1 or 5$
+
+### Eigen vector
+
+- Eigen vector = $E_λ = N(A - λ I_n)$ $because (A - λ I_n) vec x = vec 0$
+- $E_5 = N([[1, 2], [4, 3]] -  [[5, 0], [0, 5]]) = N([[-4, 2], [4, -2]])$
+- $=> [[-4, 2], [4, -2]] vec x = vec 0$ $rref([[-4, 2], [4, -2]]) = [[1, -1/2], [0, 0]]$
+- $=> [[1, -1/2], [0, 0]] [[x_1], [x_2]] = vec 0$ $=> x_1 - 1/2 x_2 = 0$ $=>x_1 = 1/2 x_2$
+- Let $x_2 = t$ $:.E_5 = {[[x_1], [x_2]] = t[[1/2], [1]]}$
+- $:. E_5 = span ([[1/2], [1]])$
+- similarly for $E_(-1) = span ([[-1], [1]])$
