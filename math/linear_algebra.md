@@ -851,7 +851,7 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 
 ## formula for eigenvalues
 
-- Wkt T(vec x) = A vec x\\\\$ for eigen its \\\\$T(vec x) = λ vec x\$
+- Wkt $T(vec x) = A vec x$ for eigen its $T(vec x) = λ vec x$
 - $:. A vec x = λ vec x$ $=>A vec x - λ vec x = vec 0$
 - Let $vec x = I_n vec x$ $=>A vec x - λ I_n vec x = vec 0$
 - $=> (A - λ I_n) vec x = vec 0$ $:. vec x = N(A - λ I_n)$
