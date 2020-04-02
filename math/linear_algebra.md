@@ -844,10 +844,11 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 
 ## eigenvalues & eigenvectors
 
-- For any transformation that maps $T:RR^n->RR^n$, there will be some vectors that are just scaled (i.e, **the span of the vector remains same even after transformation**)
-- This scaled vectors sometimes make a good coordinate system to represent the transformation easily. eg.flip along a line $c vec v_1$ mentioned above
+- For $T:RR^n->RR^n$, there can be some vectors that are **just scaled**, this are called the eigenvectors and scaling factor is eigenvalue of that $T(vec x)$.
+- Since eigenvectors of $T(vec x)$ are just scaled during $T(vec x)$, **The span of a the eigenvector remains same even after the $T(vec x)$**
+- This scaled vectors sometimes make a good coordinate system to represent the $T(vec x)$ easily. eg.flip along a line $c vec v_1$ mentioned above
 - $:. T(vec x) = λ vec x$ where $vec x$ = eigen vector and $λ$ = eigen value
-- A eigen vectors cannot be a $vec 0$, cause for every $λ$ scalar multiplier $vec 0$ will stay unchanged.
+- A eigenvectors cannot be a $vec 0$, cause for every $λ$ scalar multiplier $vec 0$ will stay unchanged.
 
 ## formula for eigenvalues
 
@@ -855,8 +856,12 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - $:. A vec x = λ vec x$ $=>A vec x - λ vec x = vec 0$
 - Let $vec x = I_n vec x$ $=>A vec x - λ I_n vec x = vec 0$
 - $=> (A - λ I_n) vec x = vec 0$ $:. vec x = N(A - λ I_n)$
-- $N(A - λ I_n)$ is Non-trivial (since eigen vectors cannot $vec 0$), therefore $A - λ I_n$ is linearly dependent and determinant = 0
+- $N(A - λ I_n)$ should be Non-trivial (for eigenvectors to exist), therefore $A - λ I_n$ is linearly dependent and determinant = 0
 - $:. A vec x = λ vec x$ for non zero $vec x$ $iff |A - λ I_n| = 0$
+
+### **Intution**
+
+- $(A - λ) vec x = vec 0$ means $(A - λ)$ is a Transformation that squishes dimension of $vec x$ to $vec 0$, $:. |A - λ I_n| = 0$. which means that we find $λ$ such that it reduces the no. of pivot entries in rref(A) i,e, making A Linearly dependent to find the eigenvalue and eigenvector.
 
 ## 2x2 Eigen Example
 
@@ -872,10 +877,9 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 
 ### Eigen vector
 
-- Eigen vector = $E_λ = N(A - λ I_n)$ $because (A - λ I_n) vec x = vec 0$
-- $E_5 = N([[1, 2], [4, 3]] -  [[5, 0], [0, 5]]) = N([[-4, 2], [4, -2]])$
-- $=> [[-4, 2], [4, -2]] vec x = vec 0$ $rref([[-4, 2], [4, -2]]) = [[1, -1/2], [0, 0]]$
-- $=> [[1, -1/2], [0, 0]] [[x_1], [x_2]] = vec 0$ $=> x_1 - 1/2 x_2 = 0$ $=>x_1 = 1/2 x_2$
+- $E_λ = N(A - λ I_n)$ and wkt $(A - λ I_n) vec x = vec 0$
+- $E_5$ $=> [[1 - 5, 2], [4, 3 - 5]] vec x  = [[-4, 2], [4, -2]] vec x = vec 0$
+- $rref=> [[1, -1/2], [0, 0]] [[x_1], [x_2]] = vec 0$ $=>x_1 = 1/2 x_2$
 - Let $x_2 = t$ $:.E_5 = {[[x_1], [x_2]] = t[[1/2], [1]]}$
 - $:. E_5 = span ([[1/2], [1]])$
 - similarly for $E_(-1) = span ([[-1], [1]])$
@@ -885,10 +889,19 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Let $T:RR^n->RR^n$ such that $T(vec x) = A vec x$, assume A has n Linearly Independent eigenvectors $B = {vec v_1, vec v_2, .., vec v_n}$
 - $T(vec v_1) = A vec v_1 = λ vec v_1 = λ vec v_1  + 0 vec v_2 + ... + 0 vec v_n$
 - $T(vec v_2) = A vec v_2 = λ vec v_2 = 0 vec v_1  + λ vec v_2 + ... + 0 vec v_n$
-- Now since the eigen vectors in B is Linearly independent we can use them as basis and some times using eigen vectors as basis makes the transformation easier.
 
-### Change Basis
+### **Intution**
+
+- We understand a $T(vec x)$ by where the resultant basis vector lands, but in order **understand the heart of the $T(vec x)$ independent of the coordinate system**, we should find the eigenvectors.
+- So instead of applying a complex $T(vec x)$ with a matrix A, we can find its eigenvectors and if it's a **basis** then simply denote the $T(vec x)$ in terms of scaling eigenvectors.
+
+## eigenbasis Matrix
 
 - $[T(vec v_1)]_B = [[λ_1],[0],[vdots],[0]]$ $[T(vec v_2)]_B = [[0],[λ_2],[vdots],[0]]$
 - Change of basis Matrix $D = [[λ_1, 0, ..., 0], [0, λ_2, ..., 0], [0, 0, vdots, 0], [0, 0, ..., λ_n]]$
-- D is a Diagonal Matrix and easy to multiply, invert, determinant and more properties, so its easier to operate on this basis
+- D is a **Diagonal Matrix** and easy to multiply, invert, find determinant and more properties exist, so its easier to operate on this basis
+
+### **Intution**
+
+- If a $T(vec x)$ Matrix A is a **diagonal matrix**, then the **basis vectors are eigenvectors** forming an **eigenbasis**
+
