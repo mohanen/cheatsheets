@@ -905,3 +905,14 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 
 - If a $T(vec x)$ Matrix A is a **diagonal matrix**, then the **basis vectors are eigenvectors** forming an **eigenbasis**
 
+# Sources
+
+## Main References
+
+* [Khan Academy](https://www.khanacademy.org/math/linear-algebra)
+* [3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+## Side References
+
+* [Wikipedia](https://www.wikipedia.org)
+* [Geogebra](https://www.geogebra.org)
