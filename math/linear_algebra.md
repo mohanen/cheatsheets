@@ -879,3 +879,16 @@ $X = [[a , b], [x_1, x_2]], Y = [[a , b], [y_1, y_2]], Z = [[a , b], [x_1+y_1, x
 - Let $x_2 = t$ $:.E_5 = {[[x_1], [x_2]] = t[[1/2], [1]]}$
 - $:. E_5 = span ([[1/2], [1]])$
 - similarly for $E_(-1) = span ([[-1], [1]])$
+
+## eigenbasis
+
+- Let $T:RR^n->RR^n$ such that $T(vec x) = A vec x$, assume A has n Linearly Independent eigenvectors $B = {vec v_1, vec v_2, .., vec v_n}$
+- $T(vec v_1) = A vec v_1 = λ vec v_1 = λ vec v_1  + 0 vec v_2 + ... + 0 vec v_n$
+- $T(vec v_2) = A vec v_2 = λ vec v_2 = 0 vec v_1  + λ vec v_2 + ... + 0 vec v_n$
+- Now since the eigen vectors in B is Linearly independent we can use them as basis and some times using eigen vectors as basis makes the transformation easier.
+
+### Change Basis
+
+- $[T(vec v_1)]_B = [[λ_1],[0],[vdots],[0]]$ $[T(vec v_2)]_B = [[0],[λ_2],[vdots],[0]]$
+- Change of basis Matrix $D = [[λ_1, 0, ..., 0], [0, λ_2, ..., 0], [0, 0, vdots, 0], [0, 0, ..., λ_n]]$
+- D is a Diagonal Matrix and easy to multiply, invert, determinant and more properties, so its easier to operate on this basis
