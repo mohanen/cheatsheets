@@ -8,22 +8,20 @@
 ### imaginary unit
 
 - $i = sqrt(-1)$ is an imaginary unit
+  > The previously unsolvable equation is now solvable. $x = i$
 
-| 1       | i       | -1      | -i      |
-| ------- | ------- | ------- | ------- |
-| $i^0$   | $i^1$   | $i^2$   | $i^3$   |
-| $i^4$   | $i^5$   | $i^6$   | $i^7$   |
-| $vdots$ | $vdots$ | $vdots$ | $vdots$ |
-
-- The pattern $1, i, -1, -i$ repeats
-
-> The previously unsolvable equation is now solvable with the addition of the imaginary unit
-
-## Pure imaginary numbers
+### Pure imaginary numbers
 
 - A complex number that has no real part
-- By taking multiples of $i$, we can create infinitely many more pure imaginary numbers.
 
-### Example
+### powers of i
 
-- $3i$ is a square root of $-9 = 9 (-1)$ is purely imaginary
+| $i^0$ | $i^1$ | $i^2$ | $i^3$ | $i^4$ | $i^5$ | $i^6$ | $i^7$ | ... |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | --- |
+| 1     | i     | -1    | -i    | 1     | i     | -1    | -i    | ... |
+
+## Complex numbers
+
+- Real numbers + imaginary unit
+- Eg: 5 + 4i
+- A Complex number is a point in a 2D Plane where Real part is x, imaginary is y
