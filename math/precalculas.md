@@ -42,14 +42,23 @@
 
 ### Division
 
-## Distance
+- With the help of conjugates.
+- $(4 + 3i) / (5 + 2i) = ((4 + 3i) / (5 + 2i)) * ((5 - 2i) / (5 - 2i))$
+- $= (20 - 8i + 15i - 6i^2)/(5^2 - (2i)^2) = (26+7i)/(29) = 26/29 + 7/29 i$
 
-- $sqrt(Re(z_1 - z_2) + Im(z_1 - z_2))$
+## Properties
 
-## Midpoint
+- Let $z_1 = a_1 + b_1 i$ & $z_2 = a_2 + b_2 i$
 
-- $(Re(z_1 + z_2))/2 + (Im(z_1 + z_2))/2 i$
+### Distance
 
-## Conjugate
+- $sqrt(a_1 - a_2 + b_1 - b_2)$
 
-- $bar z = Re(z) - Im(z)i$
+### Midpoint
+
+- $(a_1 + a_2)/2 + (b_1 + b_2)/2 i$
+
+### Conjugate
+
+- $bar z_1 = a_1 - b_1 i$
+- $z_1 * bar z_1 = (a_1 + b_1 i) * (a_1 - b_1 i) $ $= a_1^2 - (b_1 i)^2 = a_1^2 + b_1^2 = |z_1|^2$
