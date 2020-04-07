@@ -23,8 +23,10 @@
 ## Complex numbers
 
 - Real numbers + imaginary unit
+- Standard form is **z = a + bi**
 - Eg: $z = 5 + 4i$, where $Re(z) = 5$ & $Im(z) = 4$
 - A Complex number is a point in a 2D Plane where Real part is x, imaginary is y
+- The representation in a 2D Plane is called **Argand Diagram**
 
 ## Operations
 
@@ -60,5 +62,14 @@
 
 ### Conjugate
 
-- $bar z_1 = a_1 - b_1 i$
-- $z_1 * bar z_1 = (a_1 + b_1 i) * (a_1 - b_1 i) $ $= a_1^2 - (b_1 i)^2 = a_1^2 + b_1^2 = |z_1|^2$
+- $bar z = a - b i$
+- $z * bar z = (a + b i) * (a - b i) $ $= a^2 - (b i)^2 = a^2 + b^2 = |z|^2$
+
+## Absolute
+
+- Absolute = Length
+- $|a + b i| = sqrt(a^2 + b^2) = |z|$
+
+### **Intuition**
+
+- Absolute value of a real number is its distance from 0, similarly for complex numbers its the distance from origin **(0, 0)** to the position **(a, b)** in a **complex plane**.
