@@ -73,3 +73,22 @@
 ### **Intuition**
 
 - Absolute value of a real number is its distance from 0, similarly for complex numbers its the distance from origin **(0, 0)** to the position **(a, b)** in a **complex plane**.
+
+## Other representation
+
+- Complex number is a point in a 2D plan and can also be represented, with a angle $phi$ and length $|z|$
+
+### $a+bi$ $->$ $phi and |z|$
+
+- $|z| = sqrt(a^2 + b^2)$
+- $phi = tan^-1(b/a)$
+
+### $phi and |z|$ $->$ $a+bi$
+
+- $a = |z| cos(phi)$
+- $b = |z| sin(phi)$
+
+### Euler form
+
+- $z = a + bi = |z| (cos(phi) + i sin(phi))$
+- $=> z = |z| e^(i phi)$
