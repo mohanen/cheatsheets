@@ -103,3 +103,26 @@
 
 - $r * e^iθ$
 - $because$ Euler's Expansion
+
+## Multiplication in other Forms
+
+### Polar
+
+- $r_1 (cos θ_1 + i sin θ_1) * r_2 (cos θ_2 + i sin θ_2)$
+- $= r_1 * r_2 (cos (θ_1 - θ_2) + i sin (θ_1 + θ_2))$
+
+### Exponential
+
+- $r_1 e^iθ_1 * r_2 e^iθ_2 $
+- $= r_1 * r_2  e^i(θ_1 + θ_2)$
+
+## Division in other Forms
+
+### Polar
+
+- $(r_1 (cos θ_1 + i sin θ_1)) / (r_2 (cos θ_2 + i sin θ_2))$
+- $= r_1/r_2 (cos (θ_1 - θ_2) + i sin (θ_1 - θ_2))$
+
+### Exponential
+
+- $(r_1 * e^iθ_1) / (r_2 * e^iθ_2) = r_1/r_2 * e^i(θ_1 - θ_2)$
