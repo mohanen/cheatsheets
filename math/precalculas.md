@@ -88,7 +88,18 @@
 - $a = |z| cos(phi)$
 - $b = |z| sin(phi)$
 
-### Euler form
+## complex numbers Forms
 
-- $z = a + bi = |z| (cos(phi) + i sin(phi))$
-- $=> z = |z| e^(i phi)$
+### Rectangular
+
+- $a+bia+bi$
+
+### Polar
+
+- In terms of angle and length
+- $r (cos θ + i sin θ)$ where $r = |z|$
+
+### Exponential
+
+- $r * e^iθ$
+- $because$ Euler's Expansion
