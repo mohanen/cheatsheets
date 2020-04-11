@@ -126,3 +126,7 @@
 ### Exponential
 
 - $(r_1 * e^iθ_1) / (r_2 * e^iθ_2) = r_1/r_2 * e^i(θ_1 - θ_2)$
+
+## Powers of complex number
+
+- $(r * e^iθ)^x = r^x * e^(i(xθ))$
