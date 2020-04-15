@@ -130,3 +130,27 @@
 ## Powers of complex number
 
 - $(r * e^iθ)^x = r^x * e^(i(xθ))$
+
+# Polynomials
+
+## Intro
+
+- involves only the operations of **addition**, **subtraction**, **multiplication**, and **non-negative integer exponents** of variables
+- Degree of a polynomial = max exponent
+
+## Binomial Theorem
+
+- Simplifies the algebraic expansion of powers of a binomial
+- $(a+b)^2 = sum_(k=0)^n ((n),(k)) a^(n-k) b^k$ where $((n),(k))=(n!)/(k! (n-k)!)$
+
+## Pascal's triangle
+
+![](https://mathbitsnotebook.com/Algebra2/Polynomials/expanded2.png)
+
+- Represents no. of ways a current value can be achieved, eg: $(a+b)^2 = a^2 + ab + ba + b^2$, since order doesn't matter $ab = ba$, therefore 2 ways to get that combination, which is defined by adding the parent values in the triangle.
+
+![](https://www.sitesbay.com/program/images/pascals-triangle.png)
+
+## Binomial Expansion
+
+- $"Cur. coeff" = ("prev. power of x * prev. coeff of x")/("prev. no. of exp")$
