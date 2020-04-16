@@ -154,3 +154,17 @@
 ## Binomial Expansion
 
 - $"Cur. coeff" = ("prev. power of x * prev. coeff of x")/("prev. no. of exp")$
+
+## Fundamental theorem of algebra
+
+- n degree of polynomial will have **n roots**
+- root = Intersection of the curve when y = 0.
+- Some times there will be no intersection when y = 0. In that case, the roots are complex roots.
+- Complex roots always comes in **conjugate pairs**.
+
+### Example
+
+- $5x^2 + 6x + 5 = 0$
+- $ax^2 + bx + c$ wkt factors $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
+- $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$ 
+- $ = (-6 +- 8i)/10 = -3/5 +- 4/5 i$ Pair of complex roots
