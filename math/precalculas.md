@@ -151,9 +151,33 @@
 
 ![](https://www.sitesbay.com/program/images/pascals-triangle.png)
 
-## Binomial Expansion
+## Expansion vs Factorization
+
+![](https://www.mathsisfun.com/algebra/images/expand-vs-factor-quadratic.svg)
+
+## Polynomial Expansion
 
 - $"Cur. coeff" = ("prev. power of x * prev. coeff of x")/("prev. no. of exp")$
+
+## Factorization Methods
+
+### Common Factor
+
+- $6x^2 − 2x = 0 => 2x(3x − 1) = 0$
+- $x= 0 and 1/3$
+
+### Method for Simple Cases
+
+- $ax^2 + bx + c = 0 $
+- $ ax^2 + b_1 x + b_2 x + c = 0$ where $b_1 + b_2 = b$ and $b_1 * b_2 = a * c$
+
+### Graphing
+
+![](https://www.freemathhelp.com/images/parabola1.png)
+
+### General Method
+
+- $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 ## Fundamental theorem of algebra
 
@@ -168,3 +192,4 @@
 - $ax^2 + bx + c$ wkt factors $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$ 
 - $ = (-6 +- 8i)/10 = -3/5 +- 4/5 i$ Pair of complex roots
+
