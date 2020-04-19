@@ -131,6 +131,12 @@
 
 - $(r * e^iθ)^x = r^x * e^(i(xθ))$
 
+### Easy way to deal with powers
+
+- Convert to **polar form**
+- Apply powers to the **distance** and **angle**
+- Convert back to rectangular form
+
 # Polynomials
 
 ## Intro
@@ -190,6 +196,5 @@
 
 - $5x^2 + 6x + 5 = 0$
 - $ax^2 + bx + c$ wkt factors $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
-- $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$ 
+- $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$
 - $ = (-6 +- 8i)/10 = -3/5 +- 4/5 i$ Pair of complex roots
-
