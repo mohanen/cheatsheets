@@ -144,18 +144,16 @@
 - involves only the operations of **addition**, **subtraction**, **multiplication**, and **non-negative integer exponents** of variables
 - Degree of a polynomial = max exponent
 
-## Binomial Theorem
-
-- Simplifies the algebraic expansion of powers of a binomial
-- $(a+b)^2 = sum_(k=0)^n ((n),(k)) a^(n-k) b^k$ where $((n),(k))=(n!)/(k! (n-k)!)$
-
 ## Pascal's triangle
 
 ![](https://mathbitsnotebook.com/Algebra2/Polynomials/expanded2.png)
 
-- Represents no. of ways a current value can be achieved, eg: $(a+b)^2 = a^2 + ab + ba + b^2$, since order doesn't matter $ab = ba$, therefore 2 ways to get that combination, which is defined by adding the parent values in the triangle.
-
 ![](https://www.sitesbay.com/program/images/pascals-triangle.png)
+
+## Binomial Theorem
+
+- Simplifies the algebraic expansion of powers of a binomial
+- $(a+b)^2 = sum_(k=0)^n ((n),(k)) a^(n-k) b^k$ where $((n),(k))=(n!)/(k! (n-k)!)$
 
 ## Expansion vs Factorization
 
@@ -165,36 +163,19 @@
 
 - $"Cur. coeff" = ("prev. power of x * prev. coeff of x")/("prev. no. of exp")$
 
-## Factorization Methods
+## Factorization
 
-### Common Factor
+$x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
-- $6x^2 − 2x = 0 => 2x(3x − 1) = 0$
-- $x= 0 and 1/3$
+## Complex Roots
 
-### Method for Simple Cases
-
-- $ax^2 + bx + c = 0 $
-- $ ax^2 + b_1 x + b_2 x + c = 0$ where $b_1 + b_2 = b$ and $b_1 * b_2 = a * c$
-
-### Graphing
-
-![](https://www.freemathhelp.com/images/parabola1.png)
-
-### General Method
-
-- $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
-
-## Fundamental theorem of algebra
-
-- n degree of polynomial will have **n roots**
+- Fundamental theorem of algebra states **n degree polynomial will have n roots**
 - root = Intersection of the curve when y = 0.
 - Some times there will be no intersection when y = 0. In that case, the roots are complex roots.
 - Complex roots always comes in **conjugate pairs**.
 
 ### Example
 
-- $5x^2 + 6x + 5 = 0$
-- $ax^2 + bx + c$ wkt factors $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
+- Factorize $5x^2 + 6x + 5 = 0$
 - $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$
 - $ = (-6 +- 8i)/10 = -3/5 +- 4/5 i$ Pair of complex roots
