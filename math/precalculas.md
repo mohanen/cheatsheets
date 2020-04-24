@@ -179,3 +179,49 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - Factorize $5x^2 + 6x + 5 = 0$
 - $=> x = (-6 +- sqrt(6^2 - 4 * 5 * 5))/(2 * 5)$ $= (-6 +- sqrt(-64))/10$
 - $ = (-6 +- 8i)/10 = -3/5 +- 4/5 i$ Pair of complex roots
+
+# Trigonometry
+
+## Ratios
+
+![](https://cdn.kastatic.org/googleusercontent/jmY_4JbfbZhffU-tehV84DZIcmCKn1IfNAgSK8bkDRxBEd_mZNvhhaXQ2FaeUXqlQYi032pGsyF265nbejlrMD0C)
+
+> **SOH-CAH-TOA** : an easy way to remember trig ratios
+
+## Inverse trig functions
+
+- Denoted by **arc** or $""^-1$
+- $sin^-1("opp"/"adj") = θ$
+
+### Misconception
+
+- $sin^-1 != 1/sin$
+
+## Pythagorean trig identity
+
+- $hyp^2 = adj^2 + opp^2$
+
+## Reciprocal trig ratios
+
+| Trig ratio    | Reciprocal Trig tatio |
+| ------------- | --------------------- |
+| sine (sin)    | cosecant (csc)        |
+| cosine (cos)  | secant (sec)          |
+| tangent (tan) | cotangent (cot)       |
+
+## The law of sines
+
+![](https://www.onlinemathlearning.com/image-files/xlaw-of-sines.png.pagespeed.ic.fbZNTNAs6j.png)
+
+## The law of cosines
+
+![](https://www.onlinemathlearning.com/image-files/xlaw-of-cosines.png.pagespeed.ic.xmYFXUz4Xc.png)
+
+## Radians
+
+![](https://jarnowouda.com/wp-content/uploads/elementor/thumbs/05_Dividing-a-circle-in-radians-nww2awice6dh1j57cboqso2fdcsegqnkxlqekgy2vg.png)
+
+### Conversions
+
+- Degree $=>$ Radian $= ** pi/180$
+- Radian $=>$ Degree $= ** 180/pi$
