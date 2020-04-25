@@ -219,9 +219,34 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 ## Radians
 
+- Radians is the SI standards
+
 ![](https://jarnowouda.com/wp-content/uploads/elementor/thumbs/05_Dividing-a-circle-in-radians-nww2awice6dh1j57cboqso2fdcsegqnkxlqekgy2vg.png)
 
 ### Conversions
 
 - Degree $=>$ Radian $= ** pi/180$
 - Radian $=>$ Degree $= ** 180/pi$
+
+## Unit Circle (cos, sin)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Unit_circle_angles_color.svg/1024px-Unit_circle_angles_color.svg.png)
+
+## Range of inverse trig functions
+
+- wkt a function is inverse $iff$ the function is **one to one relation**.
+- And in a unit circle, multiple θ leads to same value. So in order to be inverse the **θ's range must be limited** so that it won't map to same value again.
+
+### Range
+
+| Trig ratio | Radians           | Degree           |
+| ---------- | ----------------- | ---------------- |
+| arcsin (θ) | $-pi/2$ to $pi/2$ | $-90°$ to $+90°$ |
+| arccos (θ) | $0$ to $pi$       | $0°$ to $180°$   |
+| arctan (θ) | $-pi/2$ to $pi/2$ | $-90°$ to $+90°$ |
+
+## sinusoidal function
+
+ - Functions that can be produced by shifting, stretching or compressing the **sine function**
+
+
