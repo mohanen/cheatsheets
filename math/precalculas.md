@@ -270,18 +270,28 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - $cos(α + β) = cos α cos β - sin α sin β$
 - $cos(α - β) = cos α cos β + sin α sin β$
 
+### Tan
+
+- $tan(α + β) = (tan α + tan β)/(1 - tan α tan β)$
+- $tan(α - β) = (tan α - tan β)/(1 + tan α tan β)$
+
 ## Pythagorean formula
 
 - $sin^2 θ + cos^2 θ = 1$
+- $tan^2 θ + 1 = sec^2 θ$
+- $cot^2 θ + 1 = csc^2 θ$
 
-##  Trig fn. in terms of complements
+## Double angle formulas
 
-- $cos θ = sin(pi/2 - θ)$
-- $sin θ = cos(pi/2 - θ)$
-- $tan θ = cot(pi/2 - θ)$
-- $cot θ = tan(pi/2 - θ)$
-- $csc θ = sec(pi/2 - θ)$
-- $sec θ = csc(pi/2 - θ)$
+- $sin 2θ = 2 sin θ cos θ$
+- $cos 2θ = {(cos^2 θ - sin^2 θ), (2 cos^2 θ -1) ,(1 -2 sin^2 θ):}$
+- $tan 2θ = (2 tan θ) / (1 - tan^2 θ) $
+
+## Half angle identities
+
+- $sin (θ/2) = +- sqrt((1 -cos θ)/2)$
+- $cos (θ/2) = +- sqrt((1 +cos θ)/2)$
+- $tan (θ/2) = (sin θ)/(1 + cos θ)$
 
 ## Periodicity of trig functions
 
@@ -289,13 +299,17 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - $cos(2 pi + θ) = cos θ$
 - $tan(pi + θ) = tan θ$
 
-## Negative angles
+## Symmetry identities
 
 - $sin(-θ) = - sin θ$
 - $cos(-θ) = cos θ$
 - $tan(-θ) = - tan θ$
 
-## Double angle formulas
+##  Co-function identities
 
-- $sin 2θ = 2 sin θ cos θ$
-- $cos 2θ = {(cos^2 θ - sin^2 θ), (2 cos^2 θ -1) ,(1 -2 sin^2 θ):}$
+- $cos θ = sin(pi/2 - θ)$
+- $sin θ = cos(pi/2 - θ)$
+- $tan θ = cot(pi/2 - θ)$
+- $cot θ = tan(pi/2 - θ)$
+- $csc θ = sec(pi/2 - θ)$
+- $sec θ = csc(pi/2 - θ)$
