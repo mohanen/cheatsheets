@@ -249,4 +249,53 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
  - Functions that can be produced by shifting, stretching or compressing the **sine function**
 
+## unit circle symmetry
 
+![](https://www.analyzemath.com/high_school_math/grade_11/trigo/unit_circle_symmetry.gif)
+
+- This gives us the relations of trig ratios over θ, such as $sin θ = sin (pi - θ)$ while $cos θ = -cos (pi - θ)$
+- Since **cos is symmetry along x-axis, sin along y-axis and tan along xy diagonal**
+
+## Angle addition identities
+
+![](https://www.cut-the-knot.org/triangle/SinCosAddition.gif)
+
+### Sin 
+
+- $sin(α + β) = sin α cos β + cos α sin β$
+- $sin(α - β) = sin α cos β - cos α sin β$
+
+### Cos
+
+- $cos(α + β) = cos α cos β - sin α sin β$
+- $cos(α - β) = cos α cos β + sin α sin β$
+
+## Pythagorean formula
+
+- $sin^2 θ + cos^2 θ = 1$
+
+##  Trig fn. in terms of complements
+
+- $cos θ = sin(pi/2 - θ)$
+- $sin θ = cos(pi/2 - θ)$
+- $tan θ = cot(pi/2 - θ)$
+- $cot θ = tan(pi/2 - θ)$
+- $csc θ = sec(pi/2 - θ)$
+- $sec θ = csc(pi/2 - θ)$
+
+## Periodicity of trig functions
+
+- $sin(2 pi + θ) = sin θ$
+- $cos(2 pi + θ) = cos θ$
+- $tan(pi + θ) = tan θ$
+
+## Negative angles
+
+- $sin(-θ) = - sin θ$
+- $cos(-θ) = cos θ$
+- $tan(-θ) = - tan θ$
+
+## Double angle formulas
+
+- $sin 2θ = 2 sin θ cos θ$
+- $cos 2θ = {(cos^2 θ - sin^2 θ), (2 cos^2 θ -1) ,(1 -2 sin^2 θ):}$
