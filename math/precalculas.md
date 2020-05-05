@@ -313,3 +313,33 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - $cot θ = tan(pi/2 - θ)$
 - $csc θ = sec(pi/2 - θ)$
 - $sec θ = csc(pi/2 - θ)$
+
+# Series
+
+## Sequences
+
+- Ordered lists of numbers
+- Some sequences follow a specific pattern that can be used to extend them indefinitely
+- Most of sequences can be represented by formulas
+
+### 2 Types
+
+- Finite ${a_k}_(k=1)^4 = {1,3,5,7}$
+- Infinite ${a_k}_(k=1)^∞ = {1,3,5,7,...}$
+
+### Explicit Function Definition
+
+- ${a_k}_(k=1)^4$ with $a_k = 1 + 2(k-1)$
+
+### Recursive Function Definition
+
+- ${a_k}_(k=1)^4$ with $a_k = a_(k-1) + 2$
+
+## Arithmetic sequences
+
+- Difference between the consecutive terms is **constant**
+
+| Recursive Function  | Explicit Function    |
+| ------------------- | -------------------- |
+| $a_k = a_(k-1) + d$ | $a_k = a_1 + d(k-1)$ |
+
