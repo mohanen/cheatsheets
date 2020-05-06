@@ -318,7 +318,7 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 ## Sequences
 
-- Ordered lists of numbers
+- Ordered lists / progression of numbers
 - Some sequences follow a specific pattern that can be used to extend them indefinitely
 - Most of sequences can be represented by formulas
 
@@ -335,11 +335,25 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - ${a_k}_(k=1)^4$ with $a_k = a_(k-1) + 2$
 
+## Series
+
+- **Sum of sequences**
+- $sum_(i=1)^n a_i$
+
 ## Arithmetic sequences
 
-- Difference between the consecutive terms is **constant**
+- Each terms after first is found by **adding a constant** to the previous term
+- It is a **linear function**, Instead of $y=mx+b$, we write $a(n)=dn+c$
 
 | Recursive Function  | Explicit Function    |
 | ------------------- | -------------------- |
-| $a_k = a_(k-1) + d$ | $a_k = a_1 + d(k-1)$ |
+| $a_k = a_(k-1) + d$ | $a_k = a_1 + d*(k-1)$ |
 
+## Geometric sequences
+
+- Each terms after first is found by **multiplying a constant** to the previous term
+- It is an **exponential function**, and can expressed in $a(n)=d^n * c$
+
+| Recursive Function  | Explicit Function    |
+| ------------------- | -------------------- |
+| $a_k = a_(k-1) * d$ | $a_k = a_1 * d^(k-1)$ |
