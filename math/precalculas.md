@@ -314,7 +314,7 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - $csc θ = sec(pi/2 - θ)$
 - $sec θ = csc(pi/2 - θ)$
 
-# Series
+# Sequences & Series
 
 ## Sequences
 
@@ -335,18 +335,13 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - ${a_k}_(k=1)^4$ with $a_k = a_(k-1) + 2$
 
-## Series
-
-- **Sum of sequences**
-- $sum_(i=1)^n a_i$
-
 ## Arithmetic sequences
 
 - Each terms after first is found by **adding a constant** to the previous term
 - It is a **linear function**, Instead of $y=mx+b$, we write $a(n)=dn+c$
 
-| Recursive Function  | Explicit Function    |
-| ------------------- | -------------------- |
+| Recursive Function  | Explicit Function     |
+| ------------------- | --------------------- |
 | $a_k = a_(k-1) + d$ | $a_k = a_1 + d*(k-1)$ |
 
 ## Geometric sequences
@@ -354,6 +349,34 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - Each terms after first is found by **multiplying a constant** to the previous term
 - It is an **exponential function**, and can expressed in $a(n)=d^n * c$
 
-| Recursive Function  | Explicit Function    |
-| ------------------- | -------------------- |
+| Recursive Function  | Explicit Function     |
+| ------------------- | --------------------- |
 | $a_k = a_(k-1) * d$ | $a_k = a_1 * d^(k-1)$ |
+
+## Series
+
+- **Sum of sequences**
+- $sum_(i=1)^n a_i$
+
+## Finite Geometric series
+
+- Let $S_n = a + a r +... + a r^(n-1) -> (1)$
+- $(1)*-r =>$ $-r S_n = -a r - a r^2 - ... - a r^n -> (2)$
+- $(1)+(2) =>$ $S_n - r S_n = a - a r^n$
+- $:. S_n = (a(1 - r^n))/(1-r)$
+
+### sigma notation
+
+- $sum_(i=1)^n a r^i = a + a r +... + a r^n$
+
+## Finite Arithmetic Series
+
+- Let $S_n = a + (a + r) +... + (a + r(n-1)) -> (1)$
+- $reversed (1) =>$ $S_n = (a + r(n-1)) + ... + a -> (2)$
+- $(1)+(2) =>$ $2S_n = (2a + r(n-1)) + ... + (2a + r(n-1))$
+- $:. S_n = (n(2a + r(n-1)))/2$ $= (n( a + (a + r(n-1))))/2= n(a_1 + a_n)/2$
+
+### sigma notation
+
+- $sum_(i=1)^n a + r * i = a + (a + r) +... + (a + r * n)$
+
