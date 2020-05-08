@@ -380,3 +380,16 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - $sum_(i=1)^n a + r * i = a + (a + r) +... + (a + r * n)$
 
+# Conic sections
+
+## Introduction
+
+![](https://www.cliffsnotes.com/assets/256137.png)
+
+- Sections formed from **intersecting a plane and a cone**
+
+## Standard equation of a circle
+
+![](https://www.mathsisfun.com/algebra/images/graph-circle-b.svg)
+
+- $(x-a)^2 + (y-b)^2 = r^2$
