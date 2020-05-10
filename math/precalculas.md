@@ -388,8 +388,17 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - Sections formed from **intersecting a plane and a cone**
 
-## Standard equation of a circle
+## circle
 
 ![](https://www.mathsisfun.com/algebra/images/graph-circle-b.svg)
 
-- $(x-a)^2 + (y-b)^2 = r^2$
+- $(x-h)^2 + (y-k)^2 = r^2$ where center $= (h,k)$
+
+## ellipse
+
+![](https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A259f07ca71fee9c2e5c937d11c42402c481c5751b5c1422720a2c936%2BIMAGE_TINY%2BIMAGE_TINY.1)
+
+- A circle is a special case of ellipse
+- Ellipse in center $x^2/a^2 + y^2/b^2 = 1$ where a = x-axis radius, b = y-axis radius
+- General ellipse $(x-h)^2/a^2 + (y-k)^2/b^2 = 1$
+- sum of the distances from the foci to each point on the ellipse is always the same.
