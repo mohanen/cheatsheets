@@ -408,3 +408,18 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - Sum of the distances from the foci to each point on the ellipse is always the same.
 - $f_1 + f_2 = 2 a$ and $f^2 = a^2 - b^2$
 
+## Parabola
+
+![](https://usercontent1.hubstatic.com/14702916_f1024.jpg)
+
+- Parabolas are commonly known as the graphs of **quadratic functions**
+- Focus = a point $(a, b)$
+- Directrix = a line $y = k$
+- For any point on the parabola, **distance from focus = distance from directrix**
+- $(y-k)^2 = (x-a)^2 + (y-b)^2$ where (a,b) = focus, k = directrix and (x,y) = point on parabola
+
+## Hyperbolas
+
+![](https://ugc.futurelearn.com/uploads/images/c5/b5/hero_c5b54066-737a-462b-b470-21e7ea552e4d.png)
+
+- It more like inverted ellipses where one the vertex would be negative in ellipse equation. $x^2/a^2 - y^2/b^2 = 1$ or $ - x^2/a^2 + y^2/b^2 = 1$
