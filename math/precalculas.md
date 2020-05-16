@@ -405,7 +405,7 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 ### Focus
 
 - The distance between each focus and the center is called the **focal length** of the ellipse
-- Sum of the distances from the foci to each point on the ellipse is always the same.
+- **Sum of the distances from the foci** to each point on the ellipse is always the **same**.
 - $f_1 + f_2 = 2 a$ and $f^2 = a^2 - b^2$
 
 ## Parabola
@@ -418,8 +418,20 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - For any point on the parabola, **distance from focus = distance from directrix**
 - $(y-k)^2 = (x-a)^2 + (y-b)^2$ where (a,b) = focus, k = directrix and (x,y) = point on parabola
 
-## Hyperbolas
+## Hyperbola
 
 ![](https://ugc.futurelearn.com/uploads/images/c5/b5/hero_c5b54066-737a-462b-b470-21e7ea552e4d.png)
 
 - It more like inverted ellipses where one the vertex would be negative in ellipse equation. $x^2/a^2 - y^2/b^2 = 1$ or $ - x^2/a^2 + y^2/b^2 = 1$
+
+### Opens in the +ve axis of the equation
+
+- Let $x^2/a^2 - y^2/b^2 = 1$
+- for $y = 0$ $=> x=sqrt(a^2) = +- a$ curve intersects at +a and -a
+- but for $x = 0$ $=> y=sqrt(-(b^2))$ leads to complex roots
+- so there will be no intersection in the y axis, which means it opens along **x-axis which is +ve**
+
+### Focus
+
+- **Difference of the distances from the foci** to each point on the hyperbola is always the **same**.
+- $|f_1 - f_2| = 2 a$ and $f^2 = a^2 + b^2$
