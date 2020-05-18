@@ -435,3 +435,34 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - **Difference of the distances from the foci** to each point on the hyperbola is always the **same**.
 - $|f_1 - f_2| = 2 a$ and $f^2 = a^2 + b^2$
+
+# Probability and combinatorics
+
+## Probability
+
+- Probability is simply **how likely something is to happen**.
+- $"# of possibility met by condition"/"# of all possibilities"$
+- **Sample space** = set of all possible outcomes
+
+![](https://www.wikihow.com/images/thumb/f/fa/Calculate-Probability-Step-3-Version-5.jpg/aid1345372-v4-728px-Calculate-Probability-Step-3-Version-5.jpg.webp)
+
+## Addition rule
+
+- The probability of getting a **jack or hearts** in a deck with out joker.
+- Since there is a **jack of hearts** overlapping both set, we have to **subtract the overlap** part once.
+- $= ("# of jacks " + " # of hearts " - " # of jack of hearts")/"# of cards" $
+- **P(A *or* B) = P(A) + P(B) - P(A *and* B)**
+
+## Compound independent events
+
+### Getting 2 sides same in a die
+
+![](https://www.edcollins.com/backgammon/diceposs.gif)
+
+- In the first roll anything i get can be considered desirable $:. P(A)=6/6$ and the second roll i should be getting what i got in the first roll $:. P(B)=1/6$
+- getting 2 sides same $ =  6/6 * 1/6 = 1/6$
+
+### Getting THH in a coin flip
+
+- Both H and T have equally likely events
+- $P(THH) = P(T) * P(H) * P(H) $ $= 1/2 * 1/2 * 1/2 = 1/8$
