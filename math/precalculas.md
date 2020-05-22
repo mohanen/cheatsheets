@@ -466,3 +466,27 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - Both H and T have equally likely events
 - $P(THH) = P(T) * P(H) * P(H) $ $= 1/2 * 1/2 * 1/2 = 1/8$
+
+## Dependent events
+
+### Picking Marbles in a bag
+
+- A bag has 3 green and 2 blue marbles.
+- The probability of picking 2 green marbles P(G)
+- $P(G)=P(1^(st)" marble") + P(2^(nd) " marble")$
+- $P(1^(st) " marble") = 3/5$
+- $P(2^(nd) " marble") = 2/4 = 1/2$ $ because $ first marble is already taken out, second is taken from the remains
+- $P(G) = 3/5 * 1/2 = 3/10 = 33%$
+
+
+## The Monty Hall problem
+
+![](https://upload.wikimedia.org/wikipedia/en/3/32/Monty_Hall_Diagram.png)
+
+- Choosing car in the first time $P("car") = 1/3$
+- Choosing goat in the first time $P("goat") = 2/3$
+- In $2^(nd)$ time, **always switching** = $P("car") = 2/3$ and **not switching** $P("car") = 1/3$
+
+### **Intuition**
+
+- The second time switching might look like a fifty fifty probability but its not because its a **dependent event** and in the previous event you had higher probability of losing.
