@@ -490,3 +490,45 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 ### **Intuition**
 
 - The second time switching might look like a fifty fifty probability but its not because its a **dependent event** and in the previous event you had higher probability of losing.
+
+## Permutations
+
+- **Sequential arrangement** of items from a collection
+- **Order matters**
+
+### Example
+
+- From the set S = {a, b, c} how man ways the 3 values can be arranged
+- For the first position there are 3 choices, and for the second there are (prev - 1) = 2 choice and for the third 1 choice
+- $3 * 2 * 1 = 3! = 6$ Permutations
+
+## Permutations Formula
+
+- $nPr = P(n,r) = (n!)/((n-r)!)$
+
+### Example
+
+- There are 5 peoples and 3 seats, Permutations = $nPr = P(n, r) = P(5,3) = ?$
+- The possibilities for 3 seats are $5 * 4 * 3 = 60$
+- We previously define Permutation using $n!$, Similarly $P(5,3) = 5 * 4 * 3 = (5*3*4*3*2*1)/(2*1)$ $= (5!)/(2!) = (5!)/((5-3)!) = (n!)/((n-r)!)$
+
+## 0 Factorial
+
+- why $0! = 1$
+- wkt $nPn = n!$
+- Let $n=r$ $:. nPr = nPn = (n!)/((n-n)!) = (n!)/(0!)$
+- $=> n! = (n!)/(0!) => (n!)/(n!) = 0! = 1$
+
+## Combinations
+
+- **Selection** of items from a collection
+- **Order doesn't matters**
+
+### Combination formula
+
+- $nCr = (n!)/((n-r)! * r!)$
+
+### Example
+
+- There are 5 peoples and 3 seats
+- $nCr = "Total Permutations" / "r permutations"$ $= 60/6 = 10$
