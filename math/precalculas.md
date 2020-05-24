@@ -532,3 +532,17 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 
 - There are 5 peoples and 3 seats
 - $nCr = "Total Permutations" / "r permutations"$ $= 60/6 = 10$
+
+## Probability using combinatorics
+
+### Getting exactly 2 heads in 4 flips
+
+- Combinations $2C4 = (4!)/((4-2)! * 2!) = 6$
+- Probability of each scenario $= (1/2)^4 = 1/16$
+- Probability of exactly 2 heads $= 6 * 1/16 = 3/8$
+
+### Exactly three heads in five flips
+
+- Combinations $3C5 = (5!)/((5-3)! * 3!) = 10$
+- Probability of each scenario $= (1/2)^5 = 1/32$
+- Probability of exactly 3 heads $= 10 * 1/32 = 5/16$
