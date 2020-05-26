@@ -467,13 +467,17 @@ $x = (-b +- sqrt(b^2 - 4 * a * c))/(2 * a)$
 - Both H and T have equally likely events
 - $P(THH) = P(T) * P(H) * P(H) $ $= 1/2 * 1/2 * 1/2 = 1/8$
 
+### **Intuition**
+
+- Chaining events = multiplying probability
+
 ## Dependent events
 
 ### Picking Marbles in a bag
 
 - A bag has 3 green and 2 blue marbles.
 - The probability of picking 2 green marbles P(G)
-- $P(G)=P(1^(st)" marble") + P(2^(nd) " marble")$
+- $P(G)=P(1^(st)" marble") * *P(2^(nd) " marble")$
 - $P(1^(st) " marble") = 3/5$
 - $P(2^(nd) " marble") = 2/4 = 1/2$ $ because $ first marble is already taken out, second is taken from the remains
 - $P(G) = 3/5 * 1/2 = 3/10 = 33%$
