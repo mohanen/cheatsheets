@@ -25,3 +25,10 @@
 | $lim_(x->a^-) f(x)$ | $lim_(x->a^+) f(x)$ |
 
 - If **Left hand limit $!=$ Right hand limit** then there is **no limit**
+
+## (ε, δ)-definition of limit
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d1/L%C3%ADmite_01.svg)
+
+- we can make **f(x)** as close as we like to **L** by requiring that **x** be sufficiently close to **c**.
+- $0 < |x-a| < delta$ $ => $ $|f(x)-L| < epsilon$
