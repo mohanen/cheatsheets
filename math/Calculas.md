@@ -84,3 +84,22 @@ $lim_(x->a) f(g(x)) = lim_(x->a) f(lim_(x->a) g(x)) = lim_(x->a) f(M)$
 | $lim_(x->-1^-) g(x)$ | $lim_(x->-1^+) g(x)$ | $lim_(x->-1) g(x)$ |
 | -------------------- | -------------------- | ------------------ |
 | $sin(-1+1) = 0$      | $2^(-1) = 1/2$       | no limit           |
+
+## Limits using algebraic manipulation
+
+- Let $f(x) = (x^2-x)/(x-1)$
+- $lim_(x->1) f(x) = ((1-1)x)/(1-1) = 0/0$ = **undefined ??**
+- **No** $f(1)$ is undefined not its limit
+
+> $0/0$ indicates there is a **hole or discontinuity** at the $f(1)$, so we need to algebraic manipulate (factorize, rationalize,...) $f(x)$ for $x!=a$ (making $f(x)$ continuous) and find $f(a)$
+
+- For $x != 1$ we can rewrite $f(x) = (x*(x-1))/(x-1)  = x$
+- $:. lim_(x->1) f(x) = 1$
+
+
+### **Intuition**
+
+![](https://xaktly.com/Images/Mathematics/Continuity/WideDiscontinuityGraph.png)
+
+- $0/0$ indicates there is a **hole or discontinuity**, which means **limits might exist**
+- $a/0$ indicates there is an **asymptote**, which means the **limits doesn't exist**
