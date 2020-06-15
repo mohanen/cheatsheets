@@ -103,3 +103,7 @@ $lim_(x->a) f(g(x)) = lim_(x->a) f(lim_(x->a) g(x)) = lim_(x->a) f(M)$
 
 - $0/0$ indicates there is a **hole or discontinuity**, which means **limits might exist**
 - $a/0$ indicates there is an **asymptote**, which means the **limits doesn't exist**
+
+## Strategy in finding limits
+
+![](https://cdn.kastatic.org/ka-perseus-images/a193121287b64721de28fcbfaec9f5919a367dd2.png)
