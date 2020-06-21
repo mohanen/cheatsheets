@@ -107,3 +107,21 @@ $lim_(x->a) f(g(x)) = lim_(x->a) f(lim_(x->a) g(x)) = lim_(x->a) f(M)$
 ## Strategy in finding limits
 
 ![](https://cdn.kastatic.org/ka-perseus-images/a193121287b64721de28fcbfaec9f5919a367dd2.png)
+
+## Infinity and limits
+
+![](http://mathandmultimedia.com/wp-content/uploads/2013/01/asymptote.png)
+
+$f(x) = 1/x$
+
+### Infinite limits
+
+| $lim_(x->0^+) f(x)$ | $lim_(x->0^-) f(x)$ | $lim_(x->0) f(x)$ |
+| ------------------- | ------------------- | ----------------- |
+| $oo$                | $-oo$               | no limits         |
+
+### limits at infinity
+
+| $lim_(x->oo^+) f(x)$ | $lim_(x->oo^-) f(x)$ | $lim_(x->oo) f(x)$ |
+| -------------------- | -------------------- | ------------------ |
+| $0$                  | $0$                  | $0$                |
