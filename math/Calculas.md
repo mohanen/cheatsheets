@@ -125,3 +125,11 @@ $f(x) = 1/x$
 | $lim_(x->oo^+) f(x)$ | $lim_(x->oo^-) f(x)$ | $lim_(x->oo) f(x)$ |
 | -------------------- | -------------------- | ------------------ |
 | $0$                  | $0$                  | $0$                |
+
+## Intermediate Value Theorem
+
+- $f$ is a **continuous function** over the interval $[a, b]$, then it takes on **any value** between $f(a)$ and $f(b)$ at some point within the interval
+
+![](https://upload.wikimedia.org/wikipedia/commons/8/83/Illustration_for_the_intermediate_value_theorem.svg)
+
+- let $s$ be a number with $f(a) < s < f(b)$. Then there exists some $x$ between $a$ and $b$ such that $f(x) = s$.
