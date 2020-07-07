@@ -80,7 +80,7 @@
 - Meant to **replace Make**, which is slow when performing incremental (or no-op) builds
 - Ninja build files are not meant to be written by hand.
 
-> There are other platform
+> There are other platform dependent systems also exist.
 
 ## Build generators
 
@@ -91,7 +91,7 @@
 - The **scripting language is cumbersome** to work with.
 - Some simple things are more complicated than necessary.
 
-      	### meson
+### meson
 
 - FOSS written in **Python**
 - Supports GNU Compiler Collection, Clang, Microsoft Visual Studio and others.
