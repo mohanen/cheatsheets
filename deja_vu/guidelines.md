@@ -20,6 +20,12 @@
 | `##`  | Cards     | Hierarchy          |
 | `###` | Titles    | Rules, Styles      |
 
+## Cheat sheet naming
+
+- No Spaces allowed, use '_' instead
+- Capitilization should be done as needed
+- Try to keep the File name as simple as possile
+
 # Examples
 
 ## Typography
